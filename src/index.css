@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  /* colors */
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-200: #d8d8d8;
+  --clr-neutral-300: #cecece;
+  --clr-neutral-400: #a8a8a8;
+  --clr-neutral-500: #777777;
+  --clr-neutral-600: #6b6b6b;
+  --clr-neutral-700: #4c4c4c;
+  --clr-neutral-800: #0a0a0a;
+  --clr-neutral-900: #000000;
+  /* typography */
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Jost", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fs-xs: 0.9375rem; /* 15px */
+  --fs-sm: 1rem; /* 16px */
+  --fs-md: 1.125rem; /* 18px */
+  --fs-lg: 1.25rem; /* 20px */
+  --fs-xl: 1.875rem; /* 30px */
+  --fs-2xl: 2.5rem; /* 40px */
+  --fs-3xl: 5rem; /* 80px */
+  --lh-sm: 1.3;
+  --lh-lg: 1.9;
+  --nav-link-ff: var(--ff-secondary);
+  --nav-link-fs: var(--fs-sm);
+  --nav-link-fw: var(--fw-600);
+  --nav-link-text-clr: var(--clr-neutral-100);
+  --nav-link-text-clr-active: var(--clr-neutral-200);
+  --section-heading-ff: var(--ff-secondary);
+  --section-heading-fs: var(--fs-2xl);
+  --section-heading-fw: var(--fw-400);
+  --section-heading-lh: var(--lh-sm);
+  --section-heading-text-clr: var(--clr-neutral-900);
+  --section-body-ff: var(--ff-primary);
+  --section-body-fs: var(--fs-sm);
+  --section-body-fw: var(--fw-400);
+  --section-body-lh: var(--lh-lg);
+  --section-body-text-clr: var(--clr-neutral-700);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button {
+  font: inherit;
+  padding: 0;
+  border: none;
+}
+
+#root {
+  isolation: isolate;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: var(--ff-primary);
+  line-height: var(--lh-lg);
+  color: var(--clr-neutral-700);
+}
+
+h2 {
+  font-family: var(--section-heading-ff);
+  font-size: var(--section-heading-fs);
+  font-weight: var(--section-heading-fw);
+  line-height: var(--section-heading-lh);
+  color: var(--section-heading-text-clr);
+}
+
+p {
+  font-family: var(--section-body-ff);
+  font-size: var(--section-body-fs);
+  font-weight: var(--section-body-fw);
+  line-height: var(--section-body-lh);
+  color: var(--section-body-text-clr);
+}
+
+li > a {
+  font-family: var(--nav-link-ff);
+  font-size: var(--nav-link-fs);
+  font-weight: var(--nav-link-fw);
+  color: var(--nav-link-text-clr);
+  text-transform: uppercase;
+}
+
+.search {
+  position: relative;
+}
+.search__button {
+  display: none;
+  cursor: pointer;
+}
+@media (min-width: 64em) {
+  .search__button {
+    display: grid;
+    place-content: center;
+    background-color: transparent;
+  }
+}
+.search__icon {
+  width: 1.5rem;
+  aspect-ratio: 1;
+  fill: var(--clr-neutral-100);
+}
+.search__form {
+  position: absolute;
+  right: 2.5rem;
+  transition: all 300ms ease-in-out;
+}
+.search__form.open {
+  opacity: 1;
+  width: 31.25rem;
+  height: 3.75rem;
+}
+.search__form.closed {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.search__input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1.875rem 0 rgba(0, 0, 0, 0.1019607843);
+}
+.search__input {
+  width: 100%;
+  height: 100%;
+  padding: 0.625rem 1.5625rem;
+  border-color: transparent;
+  color: var(--clr-neutral-600);
+}
+.search__input:disabled {
+  background-color: var(--clr-neutral-100);
+}
+.search__submit {
+  display: grid;
+  place-content: center;
+  width: 3.75rem;
+  height: 100%;
+  background-color: var(--clr-neutral-900);
+  cursor: pointer;
+}
+.search__submit-icon {
+  width: 1rem;
+  aspect-ratio: 1;
+  fill: var(--clr-neutral-100);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+  padding-inline: 1.25rem;
+  background-color: var(--clr-neutral-900);
+}
+@media (min-width: 40em) {
+  .header {
+    padding-inline: 6.5625rem;
+  }
+}
+.header__logo {
+  width: 8.4375rem;
+}
+
+.nav {
+  display: none;
+}
+@media (min-width: 64em) {
+  .nav {
+    display: block;
+  }
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.nav__link.active {
+  color: var(--clr-neutral-200);
+}
+.nav__link:hover {
+  color: var(--clr-neutral-100);
+}
+
+@media (min-width: 64em) {
+  .menu {
+    display: none;
+  }
+}
+.menu__overlay {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-neutral-900);
+  opacity: 0.6;
+  transition: all 500ms ease-in-out;
+}
+.menu__overlay.open {
+  right: 0;
+}
+.menu__overlay.closed {
+  right: -100%;
+}
+.menu__header {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1.875rem;
+}
+.menu__hamburger {
+  display: grid;
+  place-content: center;
+  padding: 0.625rem;
+  background-color: var(--clr-neutral-900);
+  cursor: pointer;
+}
+.menu__hamburger-icon {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  fill: var(--clr-neutral-100);
+}
+.menu__close {
+  display: grid;
+  place-content: center;
+  padding: 0.625rem;
+  background-color: var(--clr-neutral-900);
+  cursor: pointer;
+}
+.menu__close-icon {
+  width: 1.5625rem;
+  height: 1.25rem;
+  fill: var(--clr-neutral-100);
+}
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 40rem;
+  padding-block: 1.25rem;
+  padding-inline: 1.875rem;
+  background-color: var(--clr-neutral-100);
+  background-image: url("/src/assets/shared/nav/Sidemenu.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  transition: all 500ms ease-in-out;
+}
+@media (min-width: 40em) {
+  .menu__container {
+    transition-delay: 200ms;
+  }
+}
+.menu__container.open {
+  right: 0;
+}
+.menu__container.closed {
+  right: -100%;
+}
+.menu__nav-list {
+  display: grid;
+  gap: 1rem;
+  padding-block: 0.625rem;
+}
+.menu__nav-item {
+  padding-left: 0.625rem;
+}
+.menu__nav-link {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-md);
+  color: var(--clr-neutral-700);
+}
+@media (min-width: 40em) {
+  .menu__nav-link {
+    font-size: var(--fs-lg);
+  }
+}
+.menu__social-list {
+  display: flex;
+  gap: 0.625rem;
+  padding-block: 0.3125rem;
+}
+.menu__social-link {
+  display: grid;
+  place-content: center;
+  width: 2.1875rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--clr-neutral-900);
+  transition: all 200ms ease-in-out;
+}
+.menu__social-link--facebook:hover, .menu__social-link--facebook:focus-visible {
+  background-color: #1877f2;
+}
+.menu__social-link--twitter:hover, .menu__social-link--twitter:focus-visible {
+  background-color: #1da1f2;
+}
+.menu__social-link--linkedin:hover, .menu__social-link--linkedin:focus-visible {
+  background-color: #0077b5;
+}
+.menu__social-link--pinterest:hover, .menu__social-link--pinterest:focus-visible {
+  background-color: #e60023;
+}
+.menu__social-link--instagram:hover, .menu__social-link--instagram:focus-visible {
+  background-color: #c13584;
+}
+.menu__social-icon {
+  width: 1.25rem;
+  aspect-ratio: 1;
+  fill: var(--clr-neutral-100);
+}
+.menu__attribution {
+  font-size: var(--fs-xs);
+}
+.menu__attribution-link:hover {
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

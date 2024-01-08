@@ -1,0 +1,29 @@
+body {
+  font-family: var(--ff-primary);
+  line-height: var(--lh-lg);
+  color: var(--clr-neutral-700);
+}
+
+h2 {
+  font-family: var(--section-heading-ff);
+  font-size: var(--section-heading-fs);
+  font-weight: var(--section-heading-fw);
+  line-height: var(--section-heading-lh);
+  color: var(--section-heading-text-clr);
+}
+
+p {
+  font-family: var(--section-body-ff);
+  font-size: var(--section-body-fs);
+  font-weight: var(--section-body-fw);
+  line-height: var(--section-body-lh);
+  color: var(--section-body-text-clr);
+}
+
+li > a {
+  font-family: var(--nav-link-ff);
+  font-size: var(--nav-link-fs);
+  font-weight: var(--nav-link-fw);
+  color: var(--nav-link-text-clr);
+  text-transform: uppercase;
+}

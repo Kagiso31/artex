@@ -1,0 +1,25 @@
+@use "../abstracts/mixins" as m;
+
+.nav {
+  display: none;
+
+  @include m.breakpoint(large) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  &__link {
+    &.active {
+      color: var(--clr-neutral-200);
+    }
+
+    &:hover {
+      color: var(--clr-neutral-100);
+    }
+  }
+}

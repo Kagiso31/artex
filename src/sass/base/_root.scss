@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* colors */
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-200: #d8d8d8;
+  --clr-neutral-300: #cecece;
+  --clr-neutral-400: #a8a8a8;
+  --clr-neutral-500: #777777;
+  --clr-neutral-600: #6b6b6b;
+  --clr-neutral-700: #4c4c4c;
+  --clr-neutral-800: #0a0a0a;
+  --clr-neutral-900: #000000;
+
+  /* typography */
+  --ff-primary: "Poppins", sans-serif;
+  --ff-secondary: "Jost", sans-serif;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --fs-xs: 0.9375rem; /* 15px */
+  --fs-sm: 1rem; /* 16px */
+  --fs-md: 1.125rem; /* 18px */
+  --fs-lg: 1.25rem; /* 20px */
+  --fs-xl: 1.875rem; /* 30px */
+  --fs-2xl: 2.5rem; /* 40px */
+  --fs-3xl: 5rem; /* 80px */
+
+  --lh-sm: 1.3;
+  --lh-lg: 1.9;
+
+  --nav-link-ff: var(--ff-secondary);
+  --nav-link-fs: var(--fs-sm);
+  --nav-link-fw: var(--fw-600);
+  --nav-link-text-clr: var(--clr-neutral-100);
+  --nav-link-text-clr-active: var(--clr-neutral-200);
+
+  --section-heading-ff: var(--ff-secondary);
+  --section-heading-fs: var(--fs-2xl);
+  --section-heading-fw: var(--fw-400);
+  --section-heading-lh: var(--lh-sm);
+  --section-heading-text-clr: var(--clr-neutral-900);
+
+  --section-body-ff: var(--ff-primary);
+  --section-body-fs: var(--fs-sm);
+  --section-body-fw: var(--fw-400);
+  --section-body-lh: var(--lh-lg);
+  --section-body-text-clr: var(--clr-neutral-700);
+}
