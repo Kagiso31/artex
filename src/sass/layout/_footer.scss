@@ -1,0 +1,181 @@
+@use "../abstracts/mixins" as m;
+
+.footer {
+  position: relative;
+  isolation: isolate;
+  padding-top: 8.125rem;
+  padding-inline: 0.9375rem;
+  font-family: var(--footer-body-ff);
+  color: var(--footer-body-text-clr);
+  background-image: url("/src/assets/shared/footer/banner2.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
+  @include m.breakpoint(xlarge) {
+    padding-inline: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    background-color: var(--clr-neutral-900);
+    opacity: 0.8;
+  }
+  &__top {
+    padding-bottom: 5.9375rem;
+    border-bottom: 1px solid var(--clr-neutral-500);
+
+    &-wrapper {
+      display: grid;
+      gap: 2.9375rem;
+      max-width: 33.75rem;
+      margin-inline: auto;
+
+      @include m.breakpoint(medium) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 45rem;
+      }
+      @include m.breakpoint(large) {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 75rem;
+      }
+    }
+  }
+  &__section {
+    &-container {
+      display: grid;
+      gap: 0.9375rem;
+    }
+  }
+  &__heading {
+    font-family: var(--footer-heading-ff);
+    font-size: var(--footer-heading-fs);
+    font-weight: var(--footer-heading-fw);
+    line-height: var(--footer-heading-lh);
+    color: var(--footer-heading-text-clr);
+    margin-bottom: 1.875rem;
+  }
+  &__logo {
+    width: 8.4375rem;
+    margin-bottom: 1.25rem;
+  }
+  &__desc {
+    color: var(--footer-body-text-clr);
+  }
+  &__socials {
+    display: flex;
+    gap: 1.25rem;
+  }
+  &__social {
+    display: grid;
+    place-content: center;
+
+    &-icon {
+      width: 1.25rem;
+      aspect-ratio: 1;
+      fill: var(--clr-neutral-400);
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        fill: var(--clr-neutral-100);
+      }
+    }
+  }
+  &__address {
+    color: inherit;
+  }
+  &__tel {
+    font-size: var(--fs-xl);
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-500);
+    color: inherit;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      color: var(--clr-neutral-100);
+    }
+  }
+  &__email {
+    color: inherit;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      color: var(--clr-neutral-100);
+    }
+  }
+  &__links {
+    display: grid;
+    gap: 0.625rem;
+  }
+  &__link {
+    font-family: inherit;
+    font-weight: inherit;
+    text-transform: capitalize;
+    color: inherit;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      color: var(--clr-neutral-100);
+    }
+  }
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3125rem;
+    max-width: 28.9375rem;
+
+    @include m.breakpoint(medium) {
+      max-width: 20.625rem;
+    }
+  }
+
+  &__project {
+    @keyframes shine {
+      100% {
+        left: 125%;
+      }
+    }
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 1;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.3) 100%
+      );
+      transform: skewX(-25deg);
+    }
+    &:hover::before {
+      animation: shine 750ms;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-block: 0.9375rem;
+  }
+  &__attribution {
+    color: var(--clr-neutral-300);
+
+    &-link {
+      color: var(--clr-neutral-300);
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        color: var(--clr-neutral-100);
+      }
+    }
+  }
+}

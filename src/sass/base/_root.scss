@@ -25,9 +25,10 @@
   --fs-sm: 1rem; /* 16px */
   --fs-md: 1.125rem; /* 18px */
   --fs-lg: 1.25rem; /* 20px */
-  --fs-xl: 1.875rem; /* 30px */
-  --fs-2xl: 2.5rem; /* 40px */
-  --fs-3xl: 5rem; /* 80px */
+  --fs-xl: 1.625rem; /* 26px */
+  --fs-2xl: 1.875rem; /* 30px */
+  --fs-3xl: 2.5rem; /* 40px */
+  --fs-4xl: 5rem; /* 80px */
 
   --lh-sm: 1.3;
   --lh-lg: 1.9;
@@ -39,7 +40,7 @@
   --nav-link-text-clr-active: var(--clr-neutral-200);
 
   --section-heading-ff: var(--ff-secondary);
-  --section-heading-fs: var(--fs-2xl);
+  --section-heading-fs: var(--fs-3xl);
   --section-heading-fw: var(--fw-400);
   --section-heading-lh: var(--lh-sm);
   --section-heading-text-clr: var(--clr-neutral-900);
@@ -49,4 +50,16 @@
   --section-body-fw: var(--fw-400);
   --section-body-lh: var(--lh-lg);
   --section-body-text-clr: var(--clr-neutral-700);
+
+  --footer-heading-ff: var(--ff-secondary);
+  --footer-heading-fs: var(--fs-xl);
+  --footer-heading-fw: var(--fw-500);
+  --footer-heading-lh: var(--lh-sm);
+  --footer-heading-text-clr: var(--clr-neutral-300);
+
+  --footer-body-ff: var(--ff-primary);
+  --footer-body-fs: var(--fs-sm);
+  --footer-body-fw: var(--fw-400);
+  --footer-body-lh: var(--lh-lg);
+  --footer-body-text-clr: var(--clr-neutral-400);
 }
