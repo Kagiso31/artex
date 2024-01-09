@@ -1,6 +1,7 @@
-import { IconProps } from "./types";
+import { IconProps, HeroSlide } from "./types";
 import { navList, socialList } from "./nav";
 import { companyInfo, contact, quickLinks, galleryProjects } from "./footer";
+import { heroSlides } from "./hero";
 
 export {
   companyInfo,
@@ -9,5 +10,6 @@ export {
   galleryProjects,
   navList,
   socialList,
+  heroSlides,
 };
-export type { IconProps };
+export type { IconProps, HeroSlide };

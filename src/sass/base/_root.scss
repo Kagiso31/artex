@@ -29,6 +29,7 @@
   --fs-2xl: 1.875rem; /* 30px */
   --fs-3xl: 2.5rem; /* 40px */
   --fs-4xl: 5rem; /* 80px */
+  --fs-5xl: 5.5rem; /* 88px */
 
   --lh-sm: 1.3;
   --lh-lg: 1.9;
@@ -38,6 +39,24 @@
   --nav-link-fw: var(--fw-600);
   --nav-link-text-clr: var(--clr-neutral-100);
   --nav-link-text-clr-active: var(--clr-neutral-200);
+
+  --hero-heading-ff: var(--ff-secondary);
+  --hero-heading-fs: var(--fs-5xl);
+  --hero-heading-fw: var(--fw-600);
+  --hero-heading-lh: 1.1;
+  --hero-heading-text-clr: var(--clr-neutral-100);
+
+  --hero-body-ff: var(--ff-primary);
+  --hero-body-fs: var(--fs-2xl);
+  --hero-body-fw: var(--fw-400);
+  --hero-body-lh: var(--lh-sm);
+  --hero-body-text-clr: var(--clr-neutral-100);
+
+  --hero-link-ff: var(--ff-secondary);
+  --hero-link-fs: var(--fs-md);
+  --hero-link-fw: var(--fw-600);
+  --hero-link-lh: var(--lh-sm);
+  --hero-link-text-clr: var(--clr-neutral-100);
 
   --section-heading-ff: var(--ff-secondary);
   --section-heading-fs: var(--fs-3xl);
