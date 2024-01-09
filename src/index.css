@@ -252,6 +252,65 @@ li > a {
   fill: var(--clr-neutral-100);
 }
 
+.common-link {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-600);
+  color: var(--clr-neutral-600);
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 4.0625rem;
+}
+@media (min-width: 40em) {
+  .common-link {
+    padding-right: 6.25rem;
+  }
+}
+@media (min-width: 87.5em) {
+  .common-link {
+    padding-right: 7.1875rem;
+  }
+}
+.common-link:hover::before {
+  right: 1.25rem;
+  width: 1.875rem;
+  background-color: var(--clr-neutral-900);
+}
+@media (min-width: 40em) {
+  .common-link:hover::before {
+    width: 4.375rem;
+  }
+}
+@media (min-width: 87.5em) {
+  .common-link:hover::before {
+    width: 5rem;
+  }
+}
+.common-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  height: 0.0625rem;
+  background-color: var(--clr-neutral-600);
+  transform: translateY(-50%);
+  transition: all 300ms ease-in-out;
+  width: 3.125rem;
+}
+@media (min-width: 40em) {
+  .common-link::before {
+    width: 5.625rem;
+  }
+}
+@media (min-width: 87.5em) {
+  .common-link::before {
+    width: 6.25rem;
+  }
+}
+.common-link:hover {
+  color: var(--clr-neutral-900);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -774,6 +833,67 @@ li > a {
   background-color: var(--clr-neutral-100);
   transform: translateY(-50%);
   transition: all 300ms ease-in-out;
+}
+
+.story {
+  padding-block: 7.5rem;
+}
+.story__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 1.25rem;
+  max-width: 75rem;
+  padding: 4.375rem 1.875rem 3.75rem;
+  margin-inline: auto;
+  background-image: url("/src/assets/home/about1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+}
+@media (min-width: 40em) {
+  .story__container {
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+    padding-top: 5.625rem;
+    padding-right: 5rem;
+  }
+}
+.story__button {
+  display: grid;
+  place-content: center;
+  width: fit-content;
+  padding: 1.875rem;
+  border-radius: 100%;
+  background-color: var(--clr-neutral-900);
+}
+@media (min-width: 40em) {
+  .story__button {
+    padding: 3.125rem;
+  }
+}
+.story__button-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  scale: 1;
+  fill: var(--clr-neutral-100);
+}
+@media (min-width: 40em) {
+  .story__button-icon {
+    scale: 1.5;
+  }
+}
+.story__subheading {
+  font-weight: var(--fw-500);
+}
+.story__heading {
+  margin-bottom: 1.25rem;
+}
+.story__body {
+  margin-bottom: 0.9375rem;
+}
+.story__body:last-of-type {
+  margin-bottom: 2.1875rem;
 }
 
 /*# sourceMappingURL=index.css.map */

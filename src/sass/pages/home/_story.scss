@@ -1,0 +1,64 @@
+@use "../../abstracts/mixins" as m;
+
+.story {
+  padding-block: 7.5rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 1.25rem;
+    max-width: 75rem;
+    padding: 4.375rem 1.875rem 3.75rem;
+    margin-inline: auto;
+    background-image: url("/src/assets/home/about1.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+
+    @include m.breakpoint(medium) {
+      grid-template-columns: 1fr 2fr;
+      gap: 0;
+      padding-top: 5.625rem;
+      padding-right: 5rem;
+    }
+  }
+  &__button {
+    display: grid;
+    place-content: center;
+    width: fit-content;
+    padding: 1.875rem;
+    border-radius: 100%;
+    background-color: var(--clr-neutral-900);
+
+    @include m.breakpoint(medium) {
+      padding: 3.125rem;
+    }
+    &-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      scale: 1;
+      fill: var(--clr-neutral-100);
+
+      @include m.breakpoint(medium) {
+        scale: 1.5;
+      }
+    }
+  }
+
+  &__subheading {
+    font-weight: var(--fw-500);
+  }
+
+  &__heading {
+    margin-bottom: 1.25rem;
+  }
+
+  &__body {
+    margin-bottom: 0.9375rem;
+
+    &:last-of-type {
+      margin-bottom: 2.1875rem;
+    }
+  }
+}
