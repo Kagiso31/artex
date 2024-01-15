@@ -43,7 +43,6 @@
   --hero-body-fw: var(--fw-400);
   --hero-body-lh: var(--lh-sm);
   --hero-body-text-clr: var(--clr-neutral-100);
-  --hero-link-ff: var(--ff-secondary);
   --hero-link-fs: var(--fs-md);
   --hero-link-fw: var(--fw-600);
   --hero-link-lh: var(--lh-sm);
@@ -253,12 +252,13 @@ li > a {
 }
 
 .common-link {
+  position: relative;
+  padding-right: 4.0625rem;
   font-family: var(--ff-secondary);
   font-weight: var(--fw-600);
   color: var(--clr-neutral-600);
   text-transform: uppercase;
-  position: relative;
-  padding-right: 4.0625rem;
+  transition: color 300ms ease-in-out;
 }
 @media (min-width: 40em) {
   .common-link {
@@ -269,6 +269,9 @@ li > a {
   .common-link {
     padding-right: 7.1875rem;
   }
+}
+.common-link:hover, .common-link:focus-visible {
+  color: var(--clr-neutral-900);
 }
 .common-link:hover::before {
   right: 1.25rem;
@@ -291,11 +294,11 @@ li > a {
   top: 50%;
   right: 0;
   z-index: 1;
+  width: 3.125rem;
   height: 0.0625rem;
   background-color: var(--clr-neutral-600);
   transform: translateY(-50%);
   transition: all 300ms ease-in-out;
-  width: 3.125rem;
 }
 @media (min-width: 40em) {
   .common-link::before {
@@ -306,9 +309,6 @@ li > a {
   .common-link::before {
     width: 6.25rem;
   }
-}
-.common-link:hover {
-  color: var(--clr-neutral-900);
 }
 
 .header {
@@ -806,37 +806,24 @@ li > a {
   color: var(--hero-body-text-clr);
 }
 .hero__link {
-  position: relative;
-  padding-right: clamp(2.5rem, 8vw, 6.25rem);
-  font-family: var(--hero-link-ff);
   font-size: var(--hero-link-fs);
   font-weight: var(--hero-link-fw);
   line-height: var(--hero-link-lh);
   color: var(--hero-link-text-clr);
-  text-transform: uppercase;
-  transition: color 300ms ease-in-out;
 }
 .hero__link:hover, .hero__link:focus-visible {
   color: var(--clr-neutral-300);
 }
 .hero__link:hover::before {
   background-color: var(--clr-neutral-300);
-  width: clamp(1.875rem, 3vw, 6.25rem);
 }
 .hero__link::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: clamp(1.875rem, 6vw, 6.25rem);
-  height: 0.0625rem;
   background-color: var(--clr-neutral-100);
-  transform: translateY(-50%);
-  transition: all 300ms ease-in-out;
 }
 
 .story {
   padding-block: 7.5rem;
+  padding-inline: 0.625rem;
 }
 .story__container {
   display: grid;
@@ -894,6 +881,105 @@ li > a {
 }
 .story__body:last-of-type {
   margin-bottom: 2.1875rem;
+}
+
+.services {
+  padding: 4.6875rem 0.625rem 3.75rem;
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .services {
+    padding-inline: 0;
+  }
+}
+.services__wrapper {
+  max-width: 120rem;
+  margin-inline: auto;
+}
+.services__grid-container {
+  display: grid;
+  justify-items: center;
+  gap: 1.875rem;
+}
+@media (min-width: 64em) {
+  .services__grid-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.services__text {
+  max-width: 31.25rem;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+.services__heading {
+  margin-bottom: 0.625rem;
+  font-family: var(--section-heading-ff);
+  font-size: clamp(var(--fs-2xl), 4vw, var(--section-heading-fs));
+  font-weight: var(--section-heading-fw);
+  line-height: var(--section-heading-lh);
+  color: var(--section-heading-text-clr);
+}
+.services__img {
+  width: 50rem;
+  max-width: 100%;
+  aspect-ratio: auto 800/702;
+}
+.services__cards {
+  display: grid;
+  gap: 1.875rem;
+  justify-items: center;
+}
+@media (min-width: 40em) {
+  .services__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.services-card {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  max-width: 36.875rem;
+  padding: 3.8125rem 2.1875rem 3.1875rem;
+  margin-inline: auto;
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.07);
+  isolation: isolate;
+}
+.services-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background-color: var(--clr-neutral-900);
+  transition: all 300ms ease-in-out;
+}
+.services-card:hover::before {
+  width: 100%;
+}
+.services-card:hover .services-card__icon {
+  fill: var(--clr-neutral-100);
+}
+.services-card:hover .services-card__heading {
+  color: var(--clr-neutral-100);
+}
+.services-card:hover .services-card__body {
+  color: var(--clr-neutral-100);
+}
+.services-card__icon {
+  width: 3.125rem;
+  aspect-ratio: 1;
+  transition: fill 300ms ease-in-out;
+}
+.services-card__heading {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-400);
+  transition: color 300ms ease-in-out;
+}
+.services-card__body {
+  transition: color 300ms ease-in-out;
 }
 
 /*# sourceMappingURL=index.css.map */

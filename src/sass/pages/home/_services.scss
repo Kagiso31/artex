@@ -1,0 +1,108 @@
+@use "../../abstracts/mixins" as m;
+
+.services {
+  padding: 4.6875rem 0.625rem 3.75rem;
+  text-align: center;
+
+  @include m.breakpoint(large) {
+    padding-inline: 0;
+  }
+
+  &__wrapper {
+    max-width: 120rem;
+    margin-inline: auto;
+  }
+
+  &__grid-container {
+    display: grid;
+    justify-items: center;
+    gap: 1.875rem;
+
+    @include m.breakpoint(large) {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  &__text {
+    max-width: 31.25rem;
+    margin-inline: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  &__heading {
+    margin-bottom: 0.625rem;
+    font-family: var(--section-heading-ff);
+    font-size: clamp(var(--fs-2xl), 4vw, var(--section-heading-fs));
+    font-weight: var(--section-heading-fw);
+    line-height: var(--section-heading-lh);
+    color: var(--section-heading-text-clr);
+  }
+
+  &__img {
+    width: 50rem;
+    max-width: 100%;
+    aspect-ratio: auto 800 / 702;
+  }
+
+  &__cards {
+    display: grid;
+    gap: 1.875rem;
+    justify-items: center;
+
+    @include m.breakpoint(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &-card {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    max-width: 36.875rem;
+    padding: 3.8125rem 2.1875rem 3.1875rem;
+    margin-inline: auto;
+    background-color: var(--clr-neutral-100);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.07);
+    isolation: isolate;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: 0;
+      height: 100%;
+      background-color: var(--clr-neutral-900);
+      transition: all 300ms ease-in-out;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+
+    &:hover &__icon {
+      fill: var(--clr-neutral-100);
+    }
+    &:hover &__heading {
+      color: var(--clr-neutral-100);
+    }
+    &:hover &__body {
+      color: var(--clr-neutral-100);
+    }
+
+    &__icon {
+      width: 3.125rem;
+      aspect-ratio: 1;
+      transition: fill 300ms ease-in-out;
+    }
+    &__heading {
+      font-size: var(--fs-xl);
+      font-weight: var(--fw-400);
+      transition: color 300ms ease-in-out;
+    }
+    &__body {
+      transition: color 300ms ease-in-out;
+    }
+  }
+}

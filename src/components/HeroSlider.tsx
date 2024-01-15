@@ -22,7 +22,7 @@ const HeroSlider = ({ slides }: HeroSliderProps) => {
   };
 
   useEffect(() => {
-    let interval = setInterval(() => {
+    const interval = setInterval(() => {
       if (!isPaused) {
         showNextSlide();
       } else {
@@ -59,7 +59,7 @@ const HeroSlider = ({ slides }: HeroSliderProps) => {
             >
               <h1 className="hero__heading">{slide.heading}</h1>
               <p className="hero__body">{slide.body}</p>
-              <Link className="hero__link" to="/artex/portfolio">
+              <Link className="hero__link common-link" to="/artex/portfolio">
                 View Projects
               </Link>
             </div>

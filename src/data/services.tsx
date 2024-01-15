@@ -16,7 +16,7 @@ export const services: ServiceCard[] = [
   },
   {
     id: 3,
-    heading: "interior Design",
+    heading: "Interior Design",
     body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsum, quisquam similique error earum maiores natus eius blanditiis.",
     icon: <Architect className="service__icon" />,
   },
