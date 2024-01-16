@@ -1,5 +1,5 @@
 import { services } from "../../data/services";
-import { ServiceCard } from "../../data";
+import { ServicesItem } from "../../data";
 import serviceImg from "../../assets/home/service1.jpg";
 
 const Services = () => {
@@ -31,7 +31,7 @@ const Services = () => {
   );
 };
 
-const ServicesCard = ({ icon, heading, body }: ServiceCard) => {
+const ServicesCard = ({ icon, heading, body }: ServicesItem) => {
   return (
     <div className="services-card">
       <div className="services-card__icon">{icon}</div>

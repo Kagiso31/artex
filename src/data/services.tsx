@@ -1,7 +1,7 @@
-import { ServiceCard } from "./";
+import { ServicesItem } from "./";
 import { Architect, Planning, Portfolio, Process } from "./icons";
 
-export const services: ServiceCard[] = [
+export const services: ServicesItem[] = [
   {
     id: 1,
     heading: "Architecture Portfolio",

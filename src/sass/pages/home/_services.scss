@@ -31,11 +31,7 @@
 
   &__heading {
     margin-bottom: 0.625rem;
-    font-family: var(--section-heading-ff);
     font-size: clamp(var(--fs-2xl), 4vw, var(--section-heading-fs));
-    font-weight: var(--section-heading-fw);
-    line-height: var(--section-heading-lh);
-    color: var(--section-heading-text-clr);
   }
 
   &__img {
