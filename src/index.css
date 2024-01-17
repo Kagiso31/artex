@@ -269,7 +269,7 @@ li > a {
     padding-right: 6.25rem;
   }
 }
-@media (min-width: 78.125em) {
+@media (min-width: 87.5em) {
   .common-link {
     padding-right: 7.1875rem;
   }
@@ -287,7 +287,7 @@ li > a {
     width: 4.375rem;
   }
 }
-@media (min-width: 78.125em) {
+@media (min-width: 87.5em) {
   .common-link:hover::before {
     width: 5rem;
   }
@@ -309,7 +309,7 @@ li > a {
     width: 5.625rem;
   }
 }
-@media (min-width: 78.125em) {
+@media (min-width: 87.5em) {
   .common-link::before {
     width: 6.25rem;
   }
@@ -506,7 +506,7 @@ li > a {
   background-position: bottom center;
   background-size: cover;
 }
-@media (min-width: 78.125em) {
+@media (min-width: 87.5em) {
   .footer {
     padding-inline: 0;
   }
@@ -715,7 +715,7 @@ li > a {
     right: 10%;
   }
 }
-@media (min-width: 78.125em) {
+@media (min-width: 87.5em) {
   .hero__slider-btns {
     right: 18%;
   }
@@ -989,8 +989,13 @@ li > a {
   background-size: cover;
 }
 .our-portfolio__wrapper {
-  max-width: 120rem;
+  max-width: 65.625rem;
   margin-inline: auto;
+}
+@media (min-width: 87.5em) {
+  .our-portfolio__wrapper {
+    max-width: 120rem;
+  }
 }
 .our-portfolio__text {
   max-width: 31.25rem;
@@ -1023,7 +1028,7 @@ li > a {
     order: 1;
   }
 }
-@media (min-width: 78.125em) {
+@media (min-width: 87.5em) {
   .our-portfolio__cards {
     /* even - img on the left */
   }
@@ -1077,15 +1082,15 @@ li > a {
 @media (min-width: 64em) {
   .our-portfolio-card__text {
     margin-inline: 2.5rem;
+    padding: 3.9375rem 0 3.9375rem 4.0625rem;
   }
 }
-@media (min-width: 78.125em) {
+@media (min-width: 87.5em) {
   .our-portfolio-card__text {
     position: relative;
     z-index: 1;
     margin-right: 0;
     max-width: none;
-    padding: 3.9375rem 0 3.9375rem 4.0625rem;
     margin-left: calc(100% - 39.0625rem);
   }
 }
