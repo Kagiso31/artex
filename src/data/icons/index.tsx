@@ -7,6 +7,8 @@ import { Instagram } from "./socials/Instagram";
 import { LinkedIn } from "./socials/LinkedIn";
 import { Pinterest } from "./socials/Pinterest";
 import { Twitter } from "./socials/Twitter";
+import { Comment } from "./socials/Comment";
+import { User } from "./socials/User";
 
 import { Planning } from "./services/Planning";
 import { Architect } from "./services/Architect";
@@ -22,6 +24,8 @@ export {
   LinkedIn,
   Pinterest,
   Twitter,
+  Comment,
+  User,
   Planning,
   Architect,
   Portfolio,

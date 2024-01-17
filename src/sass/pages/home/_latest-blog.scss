@@ -1,0 +1,131 @@
+@use "../../abstracts/mixins" as m;
+
+.latest-blog {
+  padding: 4.0625rem 0.625rem 8.125rem;
+
+  &__wrapper {
+    max-width: 75rem;
+    margin-inline: auto;
+  }
+
+  &__text {
+    max-width: 31.25rem;
+    margin-inline: auto;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 0.625rem;
+  }
+
+  &__cards {
+    display: grid;
+    gap: 1.875rem;
+
+    @include m.breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &-card {
+    position: relative;
+    max-width: 36.25rem;
+    margin-inline: auto;
+
+    @include m.breakpoint(medium) {
+      margin-bottom: 200px;
+    }
+
+    &:hover &__img {
+      opacity: 0.8;
+      transform: scale(1.12) rotate(5deg);
+    }
+
+    &:hover &__text {
+      @include m.breakpoint(medium) {
+        transform: translateY(-65%);
+      }
+    }
+
+    &__img-container {
+      background-color: var(--clr-neutral-900);
+      overflow: hidden;
+    }
+    &__img {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+      transition: all 300ms ease-in-out;
+    }
+
+    &__text {
+      display: grid;
+      gap: 0.625rem;
+      padding: 1.875rem;
+      background-color: var(--clr-neutral-100);
+      box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.05);
+      transition: all 300ms ease-in-out;
+
+      @include m.breakpoint(medium) {
+        position: absolute;
+        padding: 3.4375rem 2.1875rem;
+        left: 0;
+        right: 0;
+        margin-inline: 25px;
+        transform: translateY(-60%);
+      }
+    }
+    &__list {
+      --spacing-x: 0.8125rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--spacing-x);
+
+      @include m.breakpoint(xsmall) {
+        gap: 0.2rem;
+      }
+
+      > li {
+        transition: color 300ms ease-in-out;
+        color: var(--clr-neutral-600);
+
+        &:not(:last-of-type) {
+          position: relative;
+          padding-right: var(--spacing-x);
+
+          &::before {
+            content: "/";
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: var(--clr-neutral-600);
+          }
+        }
+      }
+    }
+
+    &__heading {
+      font-size: clamp(1.375rem, 4vw, 1.75rem);
+      > a {
+        color: var(--clr-neutral-900);
+
+        &:hover {
+          color: var(--clr-neutral-500);
+        }
+      }
+    }
+
+    &__icon {
+      width: 0.9375rem;
+      aspect-ratio: 1;
+    }
+
+    &__author,
+    &__comment {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  }
+}

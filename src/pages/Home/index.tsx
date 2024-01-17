@@ -2,6 +2,7 @@ import Hero from "./Hero";
 import OurStory from "./OurStory";
 import Services from "./Services";
 import OurPortfolio from "./OurPortfolio";
+import LatestBlog from "./LatestBlog";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <OurStory />
       <Services />
       <OurPortfolio />
+      <LatestBlog />
     </main>
   );
 };
