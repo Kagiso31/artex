@@ -10,6 +10,7 @@ import { companyInfo, contact, quickLinks, galleryProjects } from "./footer";
 import { heroSlides } from "./hero";
 import { portfolio } from "./portfolio";
 import { blogPosts } from "./blog";
+import { featureItems, featureBackgrounds } from "./features";
 
 export {
   companyInfo,
@@ -21,5 +22,7 @@ export {
   heroSlides,
   portfolio,
   blogPosts,
+  featureItems,
+  featureBackgrounds,
 };
 export type { IconProps, HeroSlide, ServicesItem, PortfolioItem, BlogPost };

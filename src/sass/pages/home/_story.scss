@@ -30,11 +30,17 @@
     width: fit-content;
     padding: 1.875rem;
     border-radius: 100%;
-    background-color: var(--clr-neutral-900);
+    background-color: var(--clr-neutral-800);
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+      background-color: var(--clr-neutral-900);
+    }
 
     @include m.breakpoint(medium) {
       padding: 3.125rem;
     }
+
     &-icon {
       width: 2.5rem;
       height: 2.5rem;
