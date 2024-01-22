@@ -317,6 +317,43 @@ li > a {
   }
 }
 
+.back-to-top {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1.25rem;
+  z-index: 10;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  background-color: var(--clr-neutral-900);
+  overflow: hidden;
+  cursor: pointer;
+}
+@media not (prefers-reduced-motion) {
+  .back-to-top:hover .back-to-top__icon {
+    animation: outTopInBottom 500ms forwards;
+  }
+}
+.back-to-top__icon {
+  width: 1rem;
+  aspect-ratio: 1;
+  fill: var(--clr-neutral-100);
+}
+@keyframes outTopInBottom {
+  49% {
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
