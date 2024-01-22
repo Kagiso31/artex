@@ -402,18 +402,21 @@ li > a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding-block: 1.5rem;
   padding-inline: 1.25rem;
-  background-color: var(--clr-neutral-900);
   background-color: transparent;
   z-index: 10;
+  transition: background-color 300ms ease-in-out;
 }
 @media (min-width: 40em) {
   .header {
     padding-inline: 6.5625rem;
   }
+}
+.header--sticking {
+  background-color: var(--clr-neutral-900);
 }
 .header__logo {
   width: 8.4375rem;
