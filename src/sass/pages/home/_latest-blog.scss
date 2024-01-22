@@ -3,6 +3,10 @@
 .latest-blog {
   padding: 4.0625rem 0.625rem 8.125rem;
 
+  @include m.breakpoint(medium) {
+    padding-bottom: 4.0625rem;
+  }
+
   &__wrapper {
     max-width: 75rem;
     margin-inline: auto;
@@ -34,7 +38,7 @@
     margin-inline: auto;
 
     @include m.breakpoint(medium) {
-      margin-bottom: 200px;
+      margin-bottom: 12.5rem;
     }
 
     &:hover &__img {
@@ -71,16 +75,16 @@
         padding: 3.4375rem 2.1875rem;
         left: 0;
         right: 0;
-        margin-inline: 25px;
+        margin-inline: 1.5625rem;
         transform: translateY(-60%);
       }
     }
     &__list {
-      --spacing-x: 0.8125rem;
+      --_spacing-x: 0.8125rem;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: var(--spacing-x);
+      gap: var(--_spacing-x);
 
       @include m.breakpoint(xsmall) {
         gap: 0.2rem;
@@ -92,7 +96,7 @@
 
         &:not(:last-of-type) {
           position: relative;
-          padding-right: var(--spacing-x);
+          padding-right: var(--_spacing-x);
 
           &::before {
             content: "/";

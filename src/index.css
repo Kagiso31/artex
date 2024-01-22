@@ -354,6 +354,50 @@ li > a {
   }
 }
 
+.brand-scroller {
+  background: #f7f7f7;
+  padding-block: 2.5rem;
+}
+.brand-scroller__wrapper {
+  max-width: 75rem;
+  margin-inline: auto;
+}
+.brand-scroller__inner {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding-block: 0.5rem;
+  user-select: none;
+}
+.brand-scroller__img {
+  width: 8.4375rem;
+}
+.brand-scroller__wrapper[data-animated=true] {
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+.brand-scroller__wrapper[data-animated=true] .brand-scroller__inner {
+  width: max-content;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+.brand-scroller__wrapper[data-direction=right] {
+  --_animation-direction: reverse;
+}
+.brand-scroller__wrapper[data-direction=left] {
+  --_animation-direction: forwards;
+}
+.brand-scroller__wrapper[data-speed=fast] {
+  --_animation-duration: 20s;
+}
+.brand-scroller__wrapper[data-speed=slow] {
+  --_animation-duration: 60s;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 2rem));
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -1176,6 +1220,11 @@ li > a {
 .latest-blog {
   padding: 4.0625rem 0.625rem 8.125rem;
 }
+@media (min-width: 40em) {
+  .latest-blog {
+    padding-bottom: 4.0625rem;
+  }
+}
 .latest-blog__wrapper {
   max-width: 75rem;
   margin-inline: auto;
@@ -1205,7 +1254,7 @@ li > a {
 }
 @media (min-width: 40em) {
   .latest-blog-card {
-    margin-bottom: 200px;
+    margin-bottom: 12.5rem;
   }
 }
 .latest-blog-card:hover .latest-blog-card__img {
@@ -1240,16 +1289,16 @@ li > a {
     padding: 3.4375rem 2.1875rem;
     left: 0;
     right: 0;
-    margin-inline: 25px;
+    margin-inline: 1.5625rem;
     transform: translateY(-60%);
   }
 }
 .latest-blog-card__list {
-  --spacing-x: 0.8125rem;
+  --_spacing-x: 0.8125rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--spacing-x);
+  gap: var(--_spacing-x);
 }
 @media (max-width: 23.125em) {
   .latest-blog-card__list {
@@ -1262,7 +1311,7 @@ li > a {
 }
 .latest-blog-card__list > li:not(:last-of-type) {
   position: relative;
-  padding-right: var(--spacing-x);
+  padding-right: var(--_spacing-x);
 }
 .latest-blog-card__list > li:not(:last-of-type)::before {
   content: "/";

@@ -5,6 +5,7 @@ import OurPortfolio from "./OurPortfolio";
 import LatestBlog from "./LatestBlog";
 import Features from "./Features";
 import Testimonials from "./Testimonials";
+import BrandScroller from "../../components/BrandScroller";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <OurPortfolio />
       <Testimonials />
       <LatestBlog />
+      <BrandScroller />
     </main>
   );
 };
