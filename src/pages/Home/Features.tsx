@@ -10,7 +10,7 @@ const Features = () => {
   };
 
   return (
-    <section className="features">
+    <section aria-label="Features" className="features">
       <div
         onMouseEnter={handleWrapper}
         onMouseLeave={handleWrapper}

@@ -11,6 +11,7 @@ import { heroSlides } from "./hero";
 import { portfolio } from "./portfolio";
 import { blogPosts } from "./blog";
 import { featureItems, featureBackgrounds } from "./features";
+import { testimonials } from "./testimonials";
 
 export {
   companyInfo,
@@ -24,5 +25,6 @@ export {
   blogPosts,
   featureItems,
   featureBackgrounds,
+  testimonials,
 };
 export type { IconProps, HeroSlide, ServicesItem, PortfolioItem, BlogPost };

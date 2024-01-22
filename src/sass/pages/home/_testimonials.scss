@@ -1,0 +1,96 @@
+@use "../../abstracts/mixins" as m;
+
+.testimonials {
+  padding: 8.125rem 0.625rem;
+
+  &__wrapper {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  &__text {
+    max-width: 31.25rem;
+    margin-inline: auto;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  &-slider {
+    max-width: 75rem;
+    margin-inline: auto;
+
+    .swiper-slide {
+      padding-inline: 0.625rem;
+
+      @include m.breakpoint(medium) {
+        padding-left: 4.25rem;
+        padding-right: 0.95rem;
+      }
+
+      @include m.breakpoint(xlarge) {
+        padding-inline: 5.25rem;
+      }
+    }
+
+    &__item {
+      position: relative;
+      padding: 4.375rem 3.125rem 2.5rem 4.375rem;
+      width: 100%;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.04);
+      background-color: var(--clr-neutral-100);
+      user-select: none;
+
+      @include m.breakpoint(xlarge) {
+        width: 31.25rem;
+      }
+
+      &::before {
+        content: "”";
+        position: absolute;
+        right: 1.875rem;
+        top: 50%;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 12.5rem;
+        opacity: 0.04;
+        color: var(--clr-neutral-900);
+        transform: translateY(-50%);
+      }
+    }
+
+    &__img-container {
+      width: 6.25rem;
+      aspect-ratio: 1;
+      padding: 0.3125rem;
+      border-radius: 50%;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.28);
+      margin-bottom: 1.25rem;
+
+      @include m.breakpoint(medium) {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__img {
+      width: 5.625rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+    }
+
+    &__name {
+      margin-bottom: 0;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    &__occupation {
+      margin-bottom: 0.625rem;
+      font-size: var(--fs-md);
+      font-weight: var(--fw-400);
+      color: var(--clr-neutral-900);
+    }
+  }
+}
