@@ -16,6 +16,11 @@ import { Architect } from "./services/Architect";
 import { Portfolio } from "./services/Portfolio";
 import { Process } from "./services/Process";
 
+import { Concept } from "./operations/Concept";
+import { Execution } from "./operations/Execution";
+import { Idea } from "./operations/Idea";
+import { Prototyping } from "./operations/Prototyping";
+
 export {
   Search,
   Hamburger,
@@ -32,4 +37,8 @@ export {
   Architect,
   Portfolio,
   Process,
+  Concept,
+  Execution,
+  Idea,
+  Prototyping,
 };

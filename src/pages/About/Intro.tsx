@@ -26,21 +26,18 @@ const Intro = () => {
 
         <div>
           <p>
-            There are many variations of passages of Lorem Ipsum available but
-            the majority have suffered dummy alteration in that an some form by
-            the injected humour or randomised words which don’t look even that
-            slightly believable. If you are Lorem Ipsums your need to be sure
-            there isn’t anything embarrassing. There are many variations
-            passages of Lorem as Ipsums available but the majority have suffered
-            that alterations in that some form by injected humour or randomised
-            words which don’t looks even slightly that believable. If you are
-            Lorem as Ipsum you need to be sure there isn’t anything as
-            embarrassing. There are many variation of passages Lorem Ipsum
-            available but the majority have suffered that a aalteration in that
-            some form by injected humour or randomised words which don’t look
-            even slightly the believable. If you are Lorem Ipsum you need to be
-            sure there is not the anything of embarrassing. If you are Lorem
-            Ipsums your need to be sure there as isn’t anything embarrassing.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam neque
+            error commodi consequuntur assumenda dolores aut dignissimos
+            molestiae accusantium quibusdam adipisci quo eveniet accusamus sit
+            quis, laborum a obcaecati nemo. Soluta repellat dolorum quia iusto
+            placeat exercitationem aliquam, eligendi aperiam quae repellendus
+            quod sed deserunt ut qui quasi quo eveniet eum nihil perferendis.
+            Corrupti, facere blanditiis vero adipisci distinctio eum
+            perspiciatis iure culpa accusamus minus dolore facilis hic nemo, ad,
+            unde repellendus deleniti iste veritatis suscipit voluptas. Mollitia
+            facere architecto porro. Velit explicabo fugiat hic ullam doloribus
+            dolorum veritatis nihil veniam, sapiente ad natus, rerum aperiam sit
+            perferendis magni facere, mollitia iste?
           </p>
         </div>
       </div>
