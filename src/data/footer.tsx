@@ -64,7 +64,7 @@ export const contact = {
     title: "+ 7548 845 1285",
     telNumber: "+75488451285",
   },
-  email: "info@yourdomain.com",
+  email: "info@artex.com",
 };
 
 // Quick Links

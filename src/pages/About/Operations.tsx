@@ -2,10 +2,12 @@ import { operations } from "../../data/operations";
 
 const Operations = () => {
   return (
-    <section className="operations">
+    <section aria-labelledby="how-we-work" className="operations">
       <div className="operations__wrapper">
         <div className="operations__text">
-          <h2 className="operations__heading">How We Work</h2>
+          <h2 id="how-we-work" className="operations__heading">
+            How We Work
+          </h2>
           <p className="operations__body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia modi
             iusto laboriosam placeat vitae consequuntur natus.

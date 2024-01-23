@@ -1,0 +1,171 @@
+@use "../../abstracts/mixins" as m;
+
+.team {
+  padding-block: 5.3125rem;
+  padding-inline: 0.625rem;
+
+  &__wrapper {
+    max-width: 75rem;
+    margin-inline: auto;
+  }
+
+  &__text {
+    max-width: 31.25rem;
+    margin-inline: auto;
+    margin-bottom: 3.5rem;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 0.625rem;
+  }
+
+  &-cards {
+    display: grid;
+    gap: 1.875rem;
+
+    @include m.breakpoint(medium) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
+  &-card {
+    display: grid;
+
+    &:hover &__img-container,
+    &:focus-visible &__img-container {
+      &::before {
+        opacity: 1;
+      }
+    }
+    &:hover &__img,
+    &:focus-visible &__img {
+      transform: scale(1.1);
+    }
+    &:hover &__social-link,
+    &:focus-visible &__social-link {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+
+      &:nth-child(1n) {
+        transition-delay: 100ms;
+      }
+      &:nth-child(2n) {
+        transition-delay: 200ms;
+      }
+      &:nth-child(3n) {
+        transition-delay: 300ms;
+      }
+      &:nth-child(4n) {
+        transition-delay: 400ms;
+      }
+    }
+
+    &__img-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      transition: transform 300ms ease-in-out;
+    }
+
+    &__socials {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      position: absolute;
+      z-index: 2;
+      right: 0.9375rem;
+      bottom: 0.9375rem;
+    }
+
+    &__social-link {
+      margin-bottom: 0.3125rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(3.125rem);
+      transition: all 300ms ease-in-out;
+
+      &:focus-visible {
+        outline: 1px solid var(--clr-neutral-900);
+        .team-card__icon {
+          fill: var(--clr-neutral-900);
+          stroke: var(--clr-neutral-100);
+        }
+      }
+
+      &:focus-visible,
+      &:focus-visible ~ & {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition-delay: 0;
+      }
+
+      &:nth-child(1n) {
+        transition-delay: 400ms;
+      }
+      &:nth-child(2n) {
+        transition-delay: 300ms;
+      }
+      &:nth-child(3n) {
+        transition-delay: 200ms;
+      }
+      &:nth-child(4n) {
+        transition-delay: 100ms;
+      }
+    }
+
+    &__social-link:hover &__icon {
+      fill: var(--clr-neutral-300);
+    }
+
+    &__icon {
+      width: 1.125rem;
+      aspect-ratio: 1;
+      transform: scale(1.2);
+      fill: var(--clr-neutral-100);
+      transition: fill 300ms ease-in-out;
+    }
+
+    &__text {
+      padding-top: 0.9375rem;
+      text-align: right;
+    }
+
+    &__name {
+      font-size: var(--fs-lg);
+      line-height: var(--lh-sm);
+
+      a {
+        color: var(--clr-neutral-900);
+
+        &:hover {
+          color: var(--clr-neutral-500);
+        }
+      }
+    }
+
+    &__role {
+      font-size: var(--fs-sm);
+      color: var(--clr-neutral-600);
+    }
+  }
+}
