@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 import { teamMembers } from "../../data/team";
-import { useEffect } from "react";
 import Details from "./Details";
 import Biography from "./Biography";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Contact from "./Contact";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const TeamMemberInfo = () => {
   const { id } = useParams();
@@ -13,9 +13,7 @@ const TeamMemberInfo = () => {
     (teamMember) => teamMember.id === parseInt(id!)
   );
 
-  useEffect(() => {
-    document.title = `${member?.name} – Artex`;
-  }, [member?.name]);
+  usePageTitle(member?.name);
 
   return (
     <main>
