@@ -35,7 +35,11 @@ const Contact = ({ member }: ContactProps) => {
               <textarea cols={30} rows={10} placeholder="Comment *"></textarea>
             </div>
             <div className="member-contact__form-group">
-              <button className="member-contact__form-button" type="submit">
+              <button
+                className="member-contact__form-button"
+                type="submit"
+                data-color="primary"
+              >
                 <span></span>
                 <span></span>
                 Send Message

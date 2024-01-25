@@ -1,0 +1,89 @@
+@use "../../abstracts/mixins" as m;
+
+.contact-info {
+  padding-inline: 0.625rem;
+  padding-block: 1.25rem;
+
+  &__wrapper {
+    margin-inline: auto;
+    max-width: 75rem;
+  }
+
+  &__card {
+    display: grid;
+    align-items: center;
+    gap: 0.625rem;
+
+    @include m.breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__img-container {
+    justify-self: center;
+    position: relative;
+
+    @include m.breakpoint(large) {
+      justify-self: normal;
+    }
+  }
+  &__img {
+    width: 100%;
+    @include m.breakpoint(medium) {
+      width: auto;
+      max-width: none;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    padding: 0.625rem;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.07);
+    background-color: var(--clr-neutral-100);
+
+    @include m.breakpoint(large) {
+      margin-left: -38%;
+    }
+  }
+
+  &__title {
+    font-weight: var(--fw-500);
+    font-size: 1.75rem;
+    margin-bottom: 0.4375rem;
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    font-family: var(--ff-secondary);
+    font-size: 1.375rem;
+    font-weight: var(--fw-500);
+    color: var(--clr-neutral-700);
+  }
+
+  &__icon {
+    width: 1.625rem;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+  }
+
+  &__email {
+    font-size: var(--fs-md);
+    span {
+      font-size: var(--fs-md);
+      font-weight: var(--fw-500);
+      color: var(--clr-neutral-700);
+    }
+  }
+  &__address {
+    font-size: var(--fs-md);
+    span {
+      font-size: var(--fs-md);
+      font-weight: var(--fw-500);
+      color: var(--clr-neutral-700);
+    }
+  }
+}

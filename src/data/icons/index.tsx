@@ -2,6 +2,7 @@ import { Search } from "./misc/Search";
 import { Hamburger } from "./misc/Hamburger";
 import { Close } from "./misc/Close";
 import { ChevronDoubleUp } from "./misc/ChevronDoubleUp";
+import { Phone } from "./misc/Phone";
 
 import { Facebook } from "./socials/Facebook";
 import { Instagram } from "./socials/Instagram";
@@ -26,6 +27,7 @@ export {
   Hamburger,
   Close,
   ChevronDoubleUp,
+  Phone,
   Facebook,
   Instagram,
   LinkedIn,

@@ -13,11 +13,14 @@
     max-width: 31.25rem;
     margin-inline: auto;
     margin-bottom: 3.5rem;
-    text-align: center;
   }
 
   &__heading {
     margin-bottom: 0.625rem;
+  }
+
+  &__body {
+    text-align: center;
   }
 
   &__cards {
