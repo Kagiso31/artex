@@ -1,0 +1,28 @@
+@use "../../abstracts/mixins" as m;
+
+.member-contact {
+  &__form {
+    display: grid;
+    gap: 1.875rem;
+
+    @include m.breakpoint(large) {
+      grid-template-areas:
+        "name email"
+        "comment comment"
+        "button button";
+
+      &-group:nth-child(1n) {
+        grid-area: name;
+      }
+      &-group:nth-child(2n) {
+        grid-area: email;
+      }
+      &-group:nth-child(3n) {
+        grid-area: comment;
+      }
+      &-group:nth-child(4n) {
+        grid-area: button;
+      }
+    }
+  }
+}

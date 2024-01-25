@@ -1,44 +1,30 @@
+// thumbnail
 import teamMember1 from "../assets/about/team1-370x420.jpg";
 import teamMember2 from "../assets/about/team2-370x420.jpg";
 import teamMember3 from "../assets/about/team3-370x420.jpg";
 import teamMember4 from "../assets/about/team4-370x420.jpg";
 import teamMember5 from "../assets/about/team5-370x420.jpg";
 import teamMember6 from "../assets/about/team6-370x420.jpg";
+
+// img
+import team1 from "../assets/team-member/team1.jpg";
+import team2 from "../assets/team-member/team2.jpg";
+import team3 from "../assets/team-member/team3.jpg";
+import team4 from "../assets/team-member/team4.jpg";
+import team5 from "../assets/team-member/team5.jpg";
+import team6 from "../assets/team-member/team6.jpg";
+
 import { Facebook, Instagram, Pinterest, Twitter } from "./icons";
 
-type TeamMember = {
-  id: number;
-  name: string;
-  img: string;
-  link: string;
-  socials: {
-    id: number;
-    title: string;
-    link: string;
-    icon: JSX.Element;
-  }[];
-  speciality: string;
-  expertise: string;
-  experience: string;
-  email: string;
-  phone: string;
-  bio1: string; // 96 words
-  bio2: string; // 46 words
-  skills: {
-    id: number;
-    title: string;
-    progress: string;
-  }[];
-  bio3: string; // 44 words
-  bio4: string; // 26 words
-};
+import { TeamMember } from "./types";
 
 export const teamMembers: TeamMember[] = [
   // team member - 1
   {
     id: 1,
     name: "Harry Osborn",
-    img: teamMember1,
+    thumbnail: teamMember1,
+    img: team1,
     link: "/artex/team/1",
     socials: [
       {
@@ -66,11 +52,33 @@ export const teamMembers: TeamMember[] = [
         icon: <Pinterest className="team-card__icon" />,
       },
     ],
-    speciality: "Founder of Artex",
-    expertise: "Planning, Strategy",
-    experience: "13 Years",
-    email: "info@artex.com",
-    phone: "+7548 845 1285",
+    info: [
+      {
+        id: 1,
+        infoTitle: "Speciality",
+        infoValue: "Founder of Artex",
+      },
+      {
+        id: 2,
+        infoTitle: "Expertise",
+        infoValue: "Planning, Strategy",
+      },
+      {
+        id: 3,
+        infoTitle: "Experience",
+        infoValue: "13 Years",
+      },
+      {
+        id: 4,
+        infoTitle: "E-mail",
+        infoValue: "info@artex.com",
+      },
+      {
+        id: 5,
+        infoTitle: "Phone",
+        infoValue: "+7548 845 1285",
+      },
+    ],
     // biography
     bio1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto consequatur doloremque reprehenderit. Fuga nobis molestiae eum fugit, iusto deserunt error, sint repellendus ratione sequi mollitia tempora at explicabo distinctio. Eaque inventore labore quibusdam dignissimos et eos neque voluptas. Fugit minima fugiat aliquid quibusdam fuga, odit assumenda eum placeat inventore vitae! Quod molestias corrupti similique, modi voluptatibus laborum cum corporis totam ut? Expedita sed illum temporibus sequi aliquid quaerat nam beatae optio autem! Ducimus voluptates modi rem. Nesciunt eveniet ipsam consequuntur assumenda fugit inventore quos perspiciatis est, labore quae quibusdam dolorum! Nesciunt natus in architecto libero.",
     bio2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam molestiae ipsum? Vero quae officia, rem necessitatibus maiores error qui libero velit quod doloremque, molestiae enim illo odio architecto, hic excepturi nostrum voluptate dignissimos neque. Atque nesciunt a voluptatibus libero consectetur aliquid aperiam, totam corporis commodi.",
@@ -105,7 +113,8 @@ export const teamMembers: TeamMember[] = [
   {
     id: 2,
     name: "Gwen Stacy",
-    img: teamMember2,
+    thumbnail: teamMember2,
+    img: team2,
     link: "/artex/team/2",
     socials: [
       {
@@ -133,11 +142,33 @@ export const teamMembers: TeamMember[] = [
         icon: <Pinterest className="team-card__icon" />,
       },
     ],
-    speciality: "Head of Idea",
-    expertise: "Planning, Strategy",
-    experience: "13 Years",
-    email: "info@artex.com",
-    phone: "+7548 845 1285",
+    info: [
+      {
+        id: 1,
+        infoTitle: "Speciality",
+        infoValue: "Head of Idea",
+      },
+      {
+        id: 2,
+        infoTitle: "Expertise",
+        infoValue: "Planning, Strategy",
+      },
+      {
+        id: 3,
+        infoTitle: "Experience",
+        infoValue: "13 Years",
+      },
+      {
+        id: 4,
+        infoTitle: "E-mail",
+        infoValue: "info@artex.com",
+      },
+      {
+        id: 5,
+        infoTitle: "Phone",
+        infoValue: "+7548 845 1285",
+      },
+    ],
     // biography
     bio1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto consequatur doloremque reprehenderit. Fuga nobis molestiae eum fugit, iusto deserunt error, sint repellendus ratione sequi mollitia tempora at explicabo distinctio. Eaque inventore labore quibusdam dignissimos et eos neque voluptas. Fugit minima fugiat aliquid quibusdam fuga, odit assumenda eum placeat inventore vitae! Quod molestias corrupti similique, modi voluptatibus laborum cum corporis totam ut? Expedita sed illum temporibus sequi aliquid quaerat nam beatae optio autem! Ducimus voluptates modi rem. Nesciunt eveniet ipsam consequuntur assumenda fugit inventore quos perspiciatis est, labore quae quibusdam dolorum! Nesciunt natus in architecto libero.",
     bio2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam molestiae ipsum? Vero quae officia, rem necessitatibus maiores error qui libero velit quod doloremque, molestiae enim illo odio architecto, hic excepturi nostrum voluptate dignissimos neque. Atque nesciunt a voluptatibus libero consectetur aliquid aperiam, totam corporis commodi.",
@@ -172,7 +203,8 @@ export const teamMembers: TeamMember[] = [
   {
     id: 3,
     name: "Peter Parker",
-    img: teamMember3,
+    thumbnail: teamMember3,
+    img: team3,
     link: "/artex/team/3",
     socials: [
       {
@@ -200,11 +232,33 @@ export const teamMembers: TeamMember[] = [
         icon: <Pinterest className="team-card__icon" />,
       },
     ],
-    speciality: "Senior Planner",
-    expertise: "Planning, Strategy",
-    experience: "13 Years",
-    email: "info@artex.com",
-    phone: "+7548 845 1285",
+    info: [
+      {
+        id: 1,
+        infoTitle: "Speciality",
+        infoValue: "Senior Planner",
+      },
+      {
+        id: 2,
+        infoTitle: "Expertise",
+        infoValue: "Planning, Strategy",
+      },
+      {
+        id: 3,
+        infoTitle: "Experience",
+        infoValue: "13 Years",
+      },
+      {
+        id: 4,
+        infoTitle: "E-mail",
+        infoValue: "info@artex.com",
+      },
+      {
+        id: 5,
+        infoTitle: "Phone",
+        infoValue: "+7548 845 1285",
+      },
+    ],
     // biography
     bio1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto consequatur doloremque reprehenderit. Fuga nobis molestiae eum fugit, iusto deserunt error, sint repellendus ratione sequi mollitia tempora at explicabo distinctio. Eaque inventore labore quibusdam dignissimos et eos neque voluptas. Fugit minima fugiat aliquid quibusdam fuga, odit assumenda eum placeat inventore vitae! Quod molestias corrupti similique, modi voluptatibus laborum cum corporis totam ut? Expedita sed illum temporibus sequi aliquid quaerat nam beatae optio autem! Ducimus voluptates modi rem. Nesciunt eveniet ipsam consequuntur assumenda fugit inventore quos perspiciatis est, labore quae quibusdam dolorum! Nesciunt natus in architecto libero.",
     bio2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam molestiae ipsum? Vero quae officia, rem necessitatibus maiores error qui libero velit quod doloremque, molestiae enim illo odio architecto, hic excepturi nostrum voluptate dignissimos neque. Atque nesciunt a voluptatibus libero consectetur aliquid aperiam, totam corporis commodi.",
@@ -239,7 +293,8 @@ export const teamMembers: TeamMember[] = [
   {
     id: 4,
     name: "Miles Morales",
-    img: teamMember4,
+    thumbnail: teamMember4,
+    img: team4,
     link: "/artex/team/4",
     socials: [
       {
@@ -267,11 +322,33 @@ export const teamMembers: TeamMember[] = [
         icon: <Pinterest className="team-card__icon" />,
       },
     ],
-    speciality: "Senior Interior",
-    expertise: "Planning, Strategy",
-    experience: "13 Years",
-    email: "info@artex.com",
-    phone: "+7548 845 1285",
+    info: [
+      {
+        id: 1,
+        infoTitle: "Speciality",
+        infoValue: "Senior Interior",
+      },
+      {
+        id: 2,
+        infoTitle: "Expertise",
+        infoValue: "Planning, Strategy",
+      },
+      {
+        id: 3,
+        infoTitle: "Experience",
+        infoValue: "13 Years",
+      },
+      {
+        id: 4,
+        infoTitle: "E-mail",
+        infoValue: "info@artex.com",
+      },
+      {
+        id: 5,
+        infoTitle: "Phone",
+        infoValue: "+7548 845 1285",
+      },
+    ],
     // biography
     bio1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto consequatur doloremque reprehenderit. Fuga nobis molestiae eum fugit, iusto deserunt error, sint repellendus ratione sequi mollitia tempora at explicabo distinctio. Eaque inventore labore quibusdam dignissimos et eos neque voluptas. Fugit minima fugiat aliquid quibusdam fuga, odit assumenda eum placeat inventore vitae! Quod molestias corrupti similique, modi voluptatibus laborum cum corporis totam ut? Expedita sed illum temporibus sequi aliquid quaerat nam beatae optio autem! Ducimus voluptates modi rem. Nesciunt eveniet ipsam consequuntur assumenda fugit inventore quos perspiciatis est, labore quae quibusdam dolorum! Nesciunt natus in architecto libero.",
     bio2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam molestiae ipsum? Vero quae officia, rem necessitatibus maiores error qui libero velit quod doloremque, molestiae enim illo odio architecto, hic excepturi nostrum voluptate dignissimos neque. Atque nesciunt a voluptatibus libero consectetur aliquid aperiam, totam corporis commodi.",
@@ -306,7 +383,8 @@ export const teamMembers: TeamMember[] = [
   {
     id: 5,
     name: "Edward Brock",
-    img: teamMember5,
+    thumbnail: teamMember5,
+    img: team5,
     link: "/artex/team/5",
     socials: [
       {
@@ -334,11 +412,33 @@ export const teamMembers: TeamMember[] = [
         icon: <Pinterest className="team-card__icon" />,
       },
     ],
-    speciality: "Project Manager",
-    expertise: "Planning, Strategy",
-    experience: "13 Years",
-    email: "info@artex.com",
-    phone: "+7548 845 1285",
+    info: [
+      {
+        id: 1,
+        infoTitle: "Speciality",
+        infoValue: "Project Manager",
+      },
+      {
+        id: 2,
+        infoTitle: "Expertise",
+        infoValue: "Planning, Strategy",
+      },
+      {
+        id: 3,
+        infoTitle: "Experience",
+        infoValue: "13 Years",
+      },
+      {
+        id: 4,
+        infoTitle: "E-mail",
+        infoValue: "info@artex.com",
+      },
+      {
+        id: 5,
+        infoTitle: "Phone",
+        infoValue: "+7548 845 1285",
+      },
+    ],
     // biography
     bio1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto consequatur doloremque reprehenderit. Fuga nobis molestiae eum fugit, iusto deserunt error, sint repellendus ratione sequi mollitia tempora at explicabo distinctio. Eaque inventore labore quibusdam dignissimos et eos neque voluptas. Fugit minima fugiat aliquid quibusdam fuga, odit assumenda eum placeat inventore vitae! Quod molestias corrupti similique, modi voluptatibus laborum cum corporis totam ut? Expedita sed illum temporibus sequi aliquid quaerat nam beatae optio autem! Ducimus voluptates modi rem. Nesciunt eveniet ipsam consequuntur assumenda fugit inventore quos perspiciatis est, labore quae quibusdam dolorum! Nesciunt natus in architecto libero.",
     bio2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam molestiae ipsum? Vero quae officia, rem necessitatibus maiores error qui libero velit quod doloremque, molestiae enim illo odio architecto, hic excepturi nostrum voluptate dignissimos neque. Atque nesciunt a voluptatibus libero consectetur aliquid aperiam, totam corporis commodi.",
@@ -373,7 +473,8 @@ export const teamMembers: TeamMember[] = [
   {
     id: 6,
     name: "Cassandra Webb",
-    img: teamMember6,
+    thumbnail: teamMember6,
+    img: team6,
     link: "/artex/team/6",
     socials: [
       {
@@ -401,11 +502,33 @@ export const teamMembers: TeamMember[] = [
         icon: <Pinterest className="team-card__icon" />,
       },
     ],
-    speciality: "Planning Manager",
-    expertise: "Planning, Strategy",
-    experience: "13 Years",
-    email: "info@artex.com",
-    phone: "+7548 845 1285",
+    info: [
+      {
+        id: 1,
+        infoTitle: "Speciality",
+        infoValue: "Planning Manager",
+      },
+      {
+        id: 2,
+        infoTitle: "Expertise",
+        infoValue: "Planning, Strategy",
+      },
+      {
+        id: 3,
+        infoTitle: "Experience",
+        infoValue: "13 Years",
+      },
+      {
+        id: 4,
+        infoTitle: "E-mail",
+        infoValue: "info@artex.com",
+      },
+      {
+        id: 5,
+        infoTitle: "Phone",
+        infoValue: "+7548 845 1285",
+      },
+    ],
     // biography
     bio1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto consequatur doloremque reprehenderit. Fuga nobis molestiae eum fugit, iusto deserunt error, sint repellendus ratione sequi mollitia tempora at explicabo distinctio. Eaque inventore labore quibusdam dignissimos et eos neque voluptas. Fugit minima fugiat aliquid quibusdam fuga, odit assumenda eum placeat inventore vitae! Quod molestias corrupti similique, modi voluptatibus laborum cum corporis totam ut? Expedita sed illum temporibus sequi aliquid quaerat nam beatae optio autem! Ducimus voluptates modi rem. Nesciunt eveniet ipsam consequuntur assumenda fugit inventore quos perspiciatis est, labore quae quibusdam dolorum! Nesciunt natus in architecto libero.",
     bio2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam molestiae ipsum? Vero quae officia, rem necessitatibus maiores error qui libero velit quod doloremque, molestiae enim illo odio architecto, hic excepturi nostrum voluptate dignissimos neque. Atque nesciunt a voluptatibus libero consectetur aliquid aperiam, totam corporis commodi.",

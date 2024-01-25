@@ -4,7 +4,9 @@ import {
   ServicesItem,
   PortfolioItem,
   BlogPost,
+  TeamMember,
 } from "./types";
+
 import { navList, socialList } from "./nav";
 import { companyInfo, contact, quickLinks, galleryProjects } from "./footer";
 import { heroSlides } from "./hero";
@@ -27,4 +29,12 @@ export {
   featureBackgrounds,
   testimonials,
 };
-export type { IconProps, HeroSlide, ServicesItem, PortfolioItem, BlogPost };
+
+export type {
+  IconProps,
+  HeroSlide,
+  ServicesItem,
+  PortfolioItem,
+  BlogPost,
+  TeamMember,
+};

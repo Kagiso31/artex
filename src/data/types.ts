@@ -73,3 +73,31 @@ export type BlogPost = {
     body: string;
   }[];
 };
+
+export type TeamMember = {
+  id: number;
+  name: string;
+  thumbnail: string;
+  img: string;
+  link: string;
+  socials: {
+    id: number;
+    title: string;
+    link: string;
+    icon: JSX.Element;
+  }[];
+  info: {
+    id: number;
+    infoTitle: string;
+    infoValue: string;
+  }[];
+  bio1: string; // 96 words
+  bio2: string; // 46 words
+  skills: {
+    id: number;
+    title: string;
+    progress: string;
+  }[];
+  bio3: string; // 44 words
+  bio4: string; // 26 words
+};

@@ -17,10 +17,10 @@ const Team = () => {
         </div>
 
         <div className="team-cards">
-          {teamMembers.map(({ id, img, name, link, speciality, socials }) => (
+          {teamMembers.map(({ id, thumbnail, name, link, socials, info }) => (
             <div key={id} className="team-card" tabIndex={0}>
               <div className="team-card__img-container">
-                <img className="team-card__img" src={img} alt={name} />
+                <img className="team-card__img" src={thumbnail} alt={name} />
                 <div className="team-card__socials">
                   {socials.map(({ id, title, link, icon }) => (
                     <a
@@ -39,7 +39,7 @@ const Team = () => {
                 <h3 className="team-card__name">
                   <Link to={link}>{name}</Link>
                 </h3>
-                <p className="team-card__role">{speciality}</p>
+                <p className="team-card__role">{info[0].infoValue}</p>
               </div>
             </div>
           ))}
