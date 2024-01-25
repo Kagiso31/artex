@@ -10,17 +10,21 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import TeamMemberInfo from "./pages/TeamMemberInfo";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 // layout
 import RootLayout from "./layout/RootLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/artex" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="team/:id" element={<TeamMemberInfo />} />
-      <Route path="contact" element={<Contact />} />
+    <Route path="/artex">
+      <Route element={<RootLayout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="team/:id" element={<TeamMemberInfo />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
