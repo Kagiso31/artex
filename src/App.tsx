@@ -11,6 +11,7 @@ import About from "./pages/About";
 import TeamMemberInfo from "./pages/TeamMemberInfo";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
+import Portfolio from "./pages/Portfolio";
 import NotFound from "./pages/NotFound";
 
 // layout
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
         <Route path="team/:id" element={<TeamMemberInfo />} />
         <Route path="contact" element={<Contact />} />
         <Route path="faq" element={<Faq />} />
+        <Route path="portfolio" element={<Portfolio />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>

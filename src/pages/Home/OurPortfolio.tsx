@@ -34,8 +34,8 @@ const Portfolio = () => {
 
 const PortfolioCard = ({
   cardImg,
-  heading,
-  subheading,
+  name,
+  location,
   summary,
   link,
 }: PortfolioItem) => {
@@ -43,8 +43,8 @@ const PortfolioCard = ({
     <section className="our-portfolio-card">
       <div className="our-portfolio-card__text">
         <header className="our-portfolio-card__heading-container">
-          <h3 className="our-portfolio-card__heading">{heading}</h3>
-          <h4 className="our-portfolio-card__subheading">{subheading}</h4>
+          <h3 className="our-portfolio-card__heading">{name}</h3>
+          <h4 className="our-portfolio-card__subheading">{location}</h4>
         </header>
         <p className="our-portfolio-card__summary">{summary}</p>
         <Link className="our-portfolio-card__link common-link" to={link}>

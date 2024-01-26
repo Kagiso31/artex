@@ -19,8 +19,8 @@ export type ServicesItem = {
 export type PortfolioItem = {
   /* shared props */
   id: number;
-  heading: string;
-  subheading: string;
+  name: string;
+  location: string;
   summary: string;
   link: string;
   thumbnail: string;

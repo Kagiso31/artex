@@ -32,8 +32,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 1 */
   {
     id: 1,
-    heading: "Architecture Building",
-    subheading: "Midrand, South Africa",
+    name: "Architecture Building",
+    location: "Midrand, South Africa",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia in et a, esse, dolorum accusantium eveniet iste non, blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project1",
@@ -58,8 +58,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 2 */
   {
     id: 2,
-    heading: "Exterior Design",
-    subheading: "Labelli, Chele",
+    name: "Exterior Design",
+    location: "Labelli, Chele",
     summary:
       "Lorem ipsum dolor sit amet elit. Similique facilis aspernatur in nostrum sint neque obcaecati, iure tempora distinctio corporis praesentium. Distinctio deserunt, ipsum officiis temporibus, maxime iusto nemo aliquam cum, illo minus ullam aspernatur odio dignissimos natus neque laborum. Mollitia dolor animi aliquid at eligendi sit obcaecati!",
     link: "/artex/portfolio/project2",
@@ -84,8 +84,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 3 */
   {
     id: 3,
-    heading: "Tree Light Cottage",
-    subheading: "Xinjiang, China",
+    name: "Tree Light Cottage",
+    location: "Xinjiang, China",
     summary:
       "Lorem ipsum, dolor sit amet elit. Quam maiores tempore iure enim aliquid, aspernatur unde dicta magnam laudantium sed eum impedit! Quas magnam quos facere a temporibus maiores suscipit iure, doloribus voluptates commodi eum alias natus eligendi aut asperiores fuga vero rerum eos, quo amet veritatis.",
     link: "/artex/portfolio/project3",
@@ -110,8 +110,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 4 */
   {
     id: 4,
-    heading: "Magnificent Architecture",
-    subheading: "Aqaba, Jordan",
+    name: "Magnificent Architecture",
+    location: "Aqaba, Jordan",
     summary:
       "Lorem ipsum dolor sit amet, elit. Qui, corrupti? Alias molestiae officia delectus nemo culpa, dolore reiciendis reprehenderit omnis iure quis eligendi quas iste hic quae ea at eos cum necessitatibus, ipsa commodi esse! Suscipit assumenda adipisci eligendi, fugiat autem deserunt natus modi dicta dolores numquam recusandae!",
     link: "/artex/portfolio/project4",
@@ -136,8 +136,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 5* */
   {
     id: 5,
-    heading: "Exterior Scene",
-    subheading: "St, France",
+    name: "Exterior Scene",
+    location: "St, France",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project5",
@@ -161,8 +161,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 6 */
   {
     id: 6,
-    heading: "The Modern House",
-    subheading: "Ankara, Türkiye",
+    name: "The Modern House",
+    location: "Ankara, Türkiye",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project6",
@@ -186,8 +186,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 7 */
   {
     id: 7,
-    heading: "Modern Kitchen",
-    subheading: "Canca, Morocco",
+    name: "Modern Kitchen",
+    location: "Canca, Morocco",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project7",
@@ -211,8 +211,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 8 */
   {
     id: 8,
-    heading: "Family Apartment",
-    subheading: "Muscat of Oman",
+    name: "Family Apartment",
+    location: "Muscat of Oman",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project8",
@@ -236,8 +236,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 9 */
   {
     id: 9,
-    heading: "IBM Head Office",
-    subheading: "Minsk, Belarus",
+    name: "IBM Head Office",
+    location: "Minsk, Belarus",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project9",
@@ -261,8 +261,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 10 */
   {
     id: 10,
-    heading: "Contemporary Bathroom",
-    subheading: "Pretoria, South Africa",
+    name: "Contemporary Bathroom",
+    location: "Pretoria, South Africa",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project10",
@@ -286,8 +286,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 11 */
   {
     id: 11,
-    heading: "Cultural Complex",
-    subheading: "New York City, USA",
+    name: "Cultural Complex",
+    location: "New York City, USA",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project11",
@@ -311,8 +311,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 12 */
   {
     id: 12,
-    heading: "Hall Theatre Building",
-    subheading: "Madrid, Spain",
+    name: "Hall Theatre Building",
+    location: "Madrid, Spain",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project12",
@@ -336,8 +336,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 13 */
   {
     id: 13,
-    heading: "American Lard Station",
-    subheading: "Atlanta, USA",
+    name: "American Lard Station",
+    location: "Atlanta, USA",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project13",
@@ -361,8 +361,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 14 */
   {
     id: 14,
-    heading: "Pastel Tones Design",
-    subheading: "Amsterdam, The Netherlands",
+    name: "Pastel Tones Design",
+    location: "Amsterdam, The Netherlands",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project14",
@@ -386,8 +386,8 @@ export const portfolio: PortfolioItem[] = [
   /* project 15 */
   {
     id: 15,
-    heading: "Mountain House",
-    subheading: "Abu Dhabi, UAE",
+    name: "Mountain House",
+    location: "Abu Dhabi, UAE",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
     link: "/artex/portfolio/project15",
