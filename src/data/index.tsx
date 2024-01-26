@@ -5,6 +5,7 @@ import {
   PortfolioItem,
   BlogPost,
   TeamMember,
+  FaqAccordionItem,
 } from "./types";
 
 import { navList, socialList } from "./nav";
@@ -37,4 +38,5 @@ export type {
   PortfolioItem,
   BlogPost,
   TeamMember,
+  FaqAccordionItem,
 };

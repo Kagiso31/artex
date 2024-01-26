@@ -1,0 +1,53 @@
+@use "../../abstracts/mixins" as m;
+
+.faq-form-section {
+  max-width: 75rem;
+  padding-block: 7.5rem;
+  padding-inline: 0.625rem;
+  margin-inline: auto;
+
+  &__heading {
+    margin-bottom: 0.625rem;
+    font-size: clamp(1.375rem, 2vw, var(--fs-2xl));
+    font-weight: var(--fw-400);
+    text-align: left;
+  }
+  &__body {
+    width: 100%;
+    max-width: 31.25rem;
+    margin-bottom: 1.875rem;
+    text-align: left;
+  }
+}
+
+.faq-form {
+  &__wrapper {
+    display: grid;
+    gap: 1.875rem;
+
+    @include m.breakpoint(large) {
+      grid-template-areas:
+        "name email phone"
+        "message message message"
+        "button button button";
+    }
+  }
+
+  @include m.breakpoint(large) {
+    &__group:nth-child(1) {
+      grid-area: name;
+    }
+    &__group:nth-child(2) {
+      grid-area: email;
+    }
+    &__group:nth-child(3) {
+      grid-area: phone;
+    }
+    &__group:nth-child(4) {
+      grid-area: message;
+    }
+    &__group:nth-child(5) {
+      grid-area: button;
+    }
+  }
+}

@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import TeamMemberInfo from "./pages/TeamMemberInfo";
 import Contact from "./pages/Contact";
+import Faq from "./pages/Faq";
 import NotFound from "./pages/NotFound";
 
 // layout
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
         <Route path="about" element={<About />} />
         <Route path="team/:id" element={<TeamMemberInfo />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="faq" element={<Faq />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>

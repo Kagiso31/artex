@@ -1,0 +1,65 @@
+@use "../../abstracts/mixins" as m;
+
+.faq-accordion {
+  padding-inline: 0.625rem;
+  padding-bottom: 0.625rem;
+
+  &__wrapper {
+    max-width: 75rem;
+    margin-inline: auto;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 3.125rem;
+
+    @include m.breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &-panel {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    &__icon {
+      position: absolute;
+      right: 0;
+      width: 1.5rem;
+      aspect-ratio: 1;
+    }
+
+    &__title {
+      position: relative;
+      padding: 1.25rem 2.5rem 0.25rem 0;
+      font-family: var(--ff-primary);
+      font-size: var(--fs-lg);
+      font-weight: var(--fw-600);
+      color: var(--clr-neutral-900);
+    }
+
+    &__button {
+      background-color: transparent;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 500ms;
+      padding: 0.3125rem 1rem 1.5625rem 0;
+
+      &[aria-hidden="false"] {
+        grid-template-rows: 1fr;
+      }
+
+      > div {
+        overflow: hidden;
+      }
+    }
+  }
+}

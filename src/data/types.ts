@@ -101,3 +101,9 @@ export type TeamMember = {
   bio3: string; // 44 words
   bio4: string; // 26 words
 };
+
+export type FaqAccordionItem = {
+  id: number;
+  title: string;
+  body: string;
+};

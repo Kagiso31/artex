@@ -3,6 +3,8 @@ import { Hamburger } from "./misc/Hamburger";
 import { Close } from "./misc/Close";
 import { ChevronDoubleUp } from "./misc/ChevronDoubleUp";
 import { Phone } from "./misc/Phone";
+import { Plus } from "./misc/Plus";
+import { Minus } from "./misc/Minus";
 
 import { Facebook } from "./socials/Facebook";
 import { Instagram } from "./socials/Instagram";
@@ -28,6 +30,8 @@ export {
   Close,
   ChevronDoubleUp,
   Phone,
+  Plus,
+  Minus,
   Facebook,
   Instagram,
   LinkedIn,

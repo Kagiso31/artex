@@ -16,6 +16,10 @@ textarea {
   color: var(--clr-neutral-900);
   transition: border-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
 
+  &::placeholder {
+    font-size: var(--fs-xs);
+  }
+
   &:focus {
     border-color: rgba(127, 127, 127, 0.25);
     box-shadow: none;
