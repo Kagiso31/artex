@@ -2773,6 +2773,50 @@ button[type=submit] > span:last-child::after {
   transition: all 300ms ease-in-out;
 }
 
+.project-content__wrapper {
+  padding-inline: 0.625rem;
+}
+.project-content__wrapper > * {
+  margin-bottom: 4rem;
+}
+.project-content__wrapper > p {
+  max-width: 75rem;
+  margin-inline: auto;
+}
+.project-content__grid {
+  display: grid;
+  gap: 1.25rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 75rem;
+  margin-inline: auto;
+}
+@media (min-width: 64em) {
+  .project-content__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.project-content__desc:first-child {
+  margin-bottom: 0.9375rem;
+}
+.project-content__banner-img {
+  width: 100%;
+  max-width: 105rem;
+  margin-inline: auto;
+}
+.project-content__img-grid {
+  display: grid;
+  gap: 1.875rem;
+  max-width: 105rem;
+  margin-inline: auto;
+}
+@media (min-width: 64em) {
+  .project-content__img-grid {
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .not-found {
   background-size: cover;
   background-repeat: no-repeat;
