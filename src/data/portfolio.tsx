@@ -28,6 +28,9 @@ import projectimg2 from "../assets/portfolio/single-portfolio/project47-1536x365
 import projectimg3 from "../assets/portfolio/single-portfolio/project49.jpg";
 import projectimg4 from "../assets/portfolio/single-portfolio/project50.jpg";
 
+/* social icons */
+import { Facebook, Twitter, LinkedIn, Pinterest } from "./icons";
+
 export const portfolio: PortfolioItem[] = [
   /* project 1 */
   {
@@ -36,13 +39,41 @@ export const portfolio: PortfolioItem[] = [
     location: "Midrand, South Africa",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia in et a, esse, dolorum accusantium eveniet iste non, blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project1",
+    link: "/artex/portfolio/1",
     thumbnail: project1thumbnail,
     cardImg: project1cardimg,
-    client: "Peter Parker",
-    architects: "Parker's Properties",
-    projectType: "Villa, Residence",
-    completion: "21 February, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Peter Parker" },
+      { id: 2, detailTitle: "Architects", detailValue: "Parker's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "21 February 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -62,13 +93,41 @@ export const portfolio: PortfolioItem[] = [
     location: "Labelli, Chele",
     summary:
       "Lorem ipsum dolor sit amet elit. Similique facilis aspernatur in nostrum sint neque obcaecati, iure tempora distinctio corporis praesentium. Distinctio deserunt, ipsum officiis temporibus, maxime iusto nemo aliquam cum, illo minus ullam aspernatur odio dignissimos natus neque laborum. Mollitia dolor animi aliquid at eligendi sit obcaecati!",
-    link: "/artex/portfolio/project2",
+    link: "/artex/portfolio/2",
     thumbnail: project2thumbnail,
     cardImg: project2cardimg,
-    client: "Miles Morales",
-    architects: "Morales' Properties",
-    projectType: "Villa, Residence",
-    completion: "18 February, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Miles Morales" },
+      { id: 2, detailTitle: "Architects", detailValue: "Morales' Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "18 February 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tenetur odit nobis cumque doloribus hic velit, ipsa dolorum quibusdam rem vitae eius magnam quo quos iure aperiam harum in dolores. Delectus repellendus hic voluptatibus, natus reiciendis in, veniam molestias voluptatum ipsam eum asperiores eius. Dolorum dicta amet ullam dolorem blanditiis, corrupti magni, molestias laborum obcaecati dolore magnam id suscipit maiores distinctio laboriosam quasi minima autem debitis tempore possimus commodi? Non nulla, quos ratione quam libero, ducimus alias suscipit vero temporibus maiores, aliquam eligendi autem facere blanditiis voluptatibus numquam minus harum ab officiis fuga nisi sapiente? Explicabo, quo inventore!",
     description2:
@@ -88,13 +147,41 @@ export const portfolio: PortfolioItem[] = [
     location: "Xinjiang, China",
     summary:
       "Lorem ipsum, dolor sit amet elit. Quam maiores tempore iure enim aliquid, aspernatur unde dicta magnam laudantium sed eum impedit! Quas magnam quos facere a temporibus maiores suscipit iure, doloribus voluptates commodi eum alias natus eligendi aut asperiores fuga vero rerum eos, quo amet veritatis.",
-    link: "/artex/portfolio/project3",
+    link: "/artex/portfolio/3",
     thumbnail: project3thumbnail,
     cardImg: project3cardimg,
-    client: "Gwen Stacy",
-    architects: "Stacy's Properties",
-    projectType: "Villa, Residence",
-    completion: "21 February, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Gwen Stacy" },
+      { id: 2, detailTitle: "Architects", detailValue: "Stacy's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "21 February 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, hic! Fugit provident animi similique reiciendis mollitia unde quos excepturi perspiciatis earum est nisi, et molestias harum ipsum cupiditate voluptatum. Illo officia ducimus nam aut provident autem facilis doloremque reprehenderit unde rerum soluta laboriosam odio quia eligendi maxime, libero exercitationem impedit tenetur rem laborum nisi. Ipsa saepe, nesciunt reprehenderit voluptatibus est nisi pariatur itaque iusto illum iure similique porro quam ducimus explicabo sequi fuga dolorum vel voluptas dolor accusantium tenetur voluptatum aspernatur eos quod! Delectus saepe placeat eligendi, impedit perferendis modi sint deserunt ipsam reprehenderit ab laboriosam sapiente aliquam!",
     description2:
@@ -114,13 +201,41 @@ export const portfolio: PortfolioItem[] = [
     location: "Aqaba, Jordan",
     summary:
       "Lorem ipsum dolor sit amet, elit. Qui, corrupti? Alias molestiae officia delectus nemo culpa, dolore reiciendis reprehenderit omnis iure quis eligendi quas iste hic quae ea at eos cum necessitatibus, ipsa commodi esse! Suscipit assumenda adipisci eligendi, fugiat autem deserunt natus modi dicta dolores numquam recusandae!",
-    link: "/artex/portfolio/project4",
+    link: "/artex/portfolio/4",
     thumbnail: project4thumbnail,
     cardImg: project4cardimg,
-    client: "Cindy Moon",
-    architects: "Moon's Properties",
-    projectType: "Villa, Residence",
-    completion: "24 March, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Cindy Moon" },
+      { id: 2, detailTitle: "Architects", detailValue: "Moon's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "24 March 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit a ducimus error cumque, tempore vero! Nobis maxime totam commodi voluptas sequi libero, aut labore eos laborum voluptatibus architecto nesciunt quos nisi fugiat dolorum! At suscipit nisi ex quae cupiditate, numquam quod laudantium fugit aliquam! Doloremque consectetur iste illo voluptatum enim veritatis eaque nisi dicta quidem quas dolore necessitatibus in quod, aliquam magni vero? Temporibus repellendus, voluptatibus voluptate tenetur laudantium facilis aliquam ullam saepe reprehenderit consequatur, enim aspernatur hic libero dolores alias totam repudiandae aperiam deserunt. Modi amet quod recusandae optio quidem odit. Quas est vel odit expedita. Voluptate!",
     description2:
@@ -140,12 +255,40 @@ export const portfolio: PortfolioItem[] = [
     location: "St, France",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project5",
+    link: "/artex/portfolio/5",
     thumbnail: project5thumbnail,
-    client: "Ganke Lee",
-    architects: "Lee's Properties",
-    projectType: "Villa, Residence",
-    completion: "28 March, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Ganke Lee" },
+      { id: 2, detailTitle: "Architects", detailValue: "Lee's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "28 March 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -165,12 +308,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Ankara, Türkiye",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project6",
+    link: "/artex/portfolio/6",
     thumbnail: project6thumbnail,
-    client: "Norman Osborn",
-    architects: "Osborn's Properties",
-    projectType: "Villa, Residence",
-    completion: "30 March, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Norman Osborn" },
+      { id: 2, detailTitle: "Architects", detailValue: "Osborn's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "30 March 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -190,12 +361,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Canca, Morocco",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project7",
+    link: "/artex/portfolio/7",
     thumbnail: project7thumbnail,
-    client: "Otto Octavius",
-    architects: "Octavius' Properties",
-    projectType: "Villa, Residence",
-    completion: "1 April, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Otto Octavius" },
+      { id: 2, detailTitle: "Architects", detailValue: "Octavius' Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "1 April 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -215,12 +414,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Muscat of Oman",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project8",
+    link: "/artex/portfolio/8",
     thumbnail: project8thumbnail,
-    client: "Felicia Hardy",
-    architects: "Hardy's Properties",
-    projectType: "Villa, Residence",
-    completion: "8 April, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Felicia Hardy" },
+      { id: 2, detailTitle: "Architects", detailValue: "Hardy's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "8 April 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -240,12 +467,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Minsk, Belarus",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project9",
+    link: "/artex/portfolio/9",
     thumbnail: project9thumbnail,
-    client: "Hobie Brown",
-    architects: "Brown's Properties",
-    projectType: "Villa, Residence",
-    completion: "18 May, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Hobie Brown" },
+      { id: 2, detailTitle: "Architects", detailValue: "Brown's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "18 May 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -265,12 +520,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Pretoria, South Africa",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project10",
+    link: "/artex/portfolio/10",
     thumbnail: project10thumbnail,
-    client: "Ned Leeds",
-    architects: "Leed's Properties",
-    projectType: "Villa, Residence",
-    completion: "21 May, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Ned Leeds" },
+      { id: 2, detailTitle: "Architects", detailValue: "Leed's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "21 May 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -290,12 +573,40 @@ export const portfolio: PortfolioItem[] = [
     location: "New York City, USA",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project11",
+    link: "/artex/portfolio/11",
     thumbnail: project11thumbnail,
-    client: "Edward Brock",
-    architects: "Brock's Properties",
-    projectType: "Villa, Residence",
-    completion: "15 June, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Edward Brock" },
+      { id: 2, detailTitle: "Architects", detailValue: "Brock's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "15 June 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -315,12 +626,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Madrid, Spain",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project12",
+    link: "/artex/portfolio/12",
     thumbnail: project12thumbnail,
-    client: "Mac Gargan",
-    architects: "Gargan's Properties",
-    projectType: "Villa, Residence",
-    completion: "21 June, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Mac Gargan" },
+      { id: 2, detailTitle: "Architects", detailValue: "Gargan's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "21 June 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -340,12 +679,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Atlanta, USA",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project13",
+    link: "/artex/portfolio/13",
     thumbnail: project13thumbnail,
-    client: "Max Dillon",
-    architects: "Dillon's Properties",
-    projectType: "Villa, Residence",
-    completion: "28 July, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Max Dillon" },
+      { id: 2, detailTitle: "Architects", detailValue: "Dillon's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "28 July 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -365,12 +732,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Amsterdam, The Netherlands",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project14",
+    link: "/artex/portfolio/14",
     thumbnail: project14thumbnail,
-    client: "Quentin Beck",
-    architects: "Beck's Properties",
-    projectType: "Villa, Residence",
-    completion: "14 August, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Quentin Beck" },
+      { id: 2, detailTitle: "Architects", detailValue: "Beck's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "14 August 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:
@@ -390,12 +785,40 @@ export const portfolio: PortfolioItem[] = [
     location: "Abu Dhabi, UAE",
     summary:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis consequuntur officia in et a, esse, dolorum accusantium eveniet iste non, exercitationem blanditiis! Porro voluptas deserunt optio ex deleniti quaerat enim harum velit cupiditate officiis et reprehenderit asperiores amet itaque quasi alias impedit, assumenda sit explicabo perferendis. Ea doloremque numquam vitae?",
-    link: "/artex/portfolio/project15",
+    link: "/artex/portfolio/15",
     thumbnail: project15thumbnail,
-    client: "Benjamin Reilly",
-    architects: "Reilly's Properties",
-    projectType: "Villa, Residence",
-    completion: "16 September, 2020",
+    projectDetails: [
+      { id: 1, detailTitle: "Client", detailValue: "Benjamin Reilly" },
+      { id: 2, detailTitle: "Architects", detailValue: "Reilly's Properties" },
+      { id: 3, detailTitle: "Project Type", detailValue: "Villa, Residence" },
+      { id: 4, detailTitle: "Completion", detailValue: "16 September 2020" },
+    ],
+    socials: [
+      {
+        id: 1,
+        title: "Facebook",
+        link: "https://www.facebook.com",
+        icon: <Facebook className="project-intro__social-icon" />,
+      },
+      {
+        id: 2,
+        title: "Twitter",
+        link: "https://www.twitter.com",
+        icon: <Twitter className="project-intro__social-icon" />,
+      },
+      {
+        id: 3,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com",
+        icon: <LinkedIn className="project-intro__social-icon" />,
+      },
+      {
+        id: 4,
+        title: "Pinterest",
+        link: "https://www.pinterest.com",
+        icon: <Pinterest className="project-intro__social-icon" />,
+      },
+    ],
     description1:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni exercitationem sequi eius quod voluptates voluptatem, adipisci rem amet? Fugiat laudantium itaque quidem nemo consequatur quibusdam consequuntur nihil, illum molestiae eaque magnam id mollitia repudiandae perferendis aperiam odio soluta ea incidunt libero sed voluptas. Eveniet fuga recusandae beatae, cupiditate, fugiat eius consectetur consequatur dolorem dolore quaerat facilis ea repellendus ratione illum provident placeat libero dolores tempora perferendis rem. Eligendi consequuntur, commodi blanditiis amet voluptates fugiat ut odio nihil eius illum quod ducimus exercitationem, accusantium, iste aperiam culpa! Quos temporibus corrupti qui pariatur reprehenderit consectetur quisquam dolore nam dignissimos error.",
     description2:

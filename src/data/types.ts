@@ -26,10 +26,17 @@ export type PortfolioItem = {
   thumbnail: string;
   cardImg?: string;
   /* individual portfolio */
-  client: string;
-  architects: string;
-  projectType: string;
-  completion: string;
+  projectDetails: {
+    id: number;
+    detailTitle: string;
+    detailValue: string;
+  }[];
+  socials: {
+    id: number;
+    title: string;
+    link: string;
+    icon: JSX.Element;
+  }[];
   description1: string;
   description2: string;
   description3: string;

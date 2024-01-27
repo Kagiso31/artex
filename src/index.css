@@ -2670,6 +2670,109 @@ button[type=submit] > span:last-child::after {
   cursor: pointer;
 }
 
+.project-intro {
+  padding: 7.8125rem 0.625rem 4.0625rem;
+}
+.project-intro__wrapper {
+  max-width: 75rem;
+  margin-inline: auto;
+}
+.project-intro__info {
+  max-width: 55.625rem;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.project-intro__location {
+  margin-bottom: 0.3125rem;
+  font-size: 1.375rem;
+  font-weight: var(--fw-400);
+  color: var(--clr-neutral-700);
+}
+.project-intro__name {
+  margin-bottom: 0.625rem;
+  font-family: var(--ff-secondary);
+  font-size: 2.5rem;
+  font-weight: var(--fw-400);
+  line-height: 1.4;
+  color: var(--clr-neutral-900);
+}
+.project-intro__details {
+  display: grid;
+  gap: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 40em) {
+  .project-intro__details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64em) {
+  .project-intro__details {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.project-intro__detail {
+  display: grid;
+  place-content: center;
+  min-height: 8.75rem;
+  padding: 0.9375rem;
+  border: 1px solid #e1e1e1;
+  background-color: var(--clr-neutral-100);
+  text-align: center;
+}
+.project-intro__detail-title {
+  font-size: 1.5rem;
+  font-weight: var(--fw-600);
+}
+.project-intro__detail-body {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-md);
+  color: var(--clr-neutral-700);
+}
+.project-intro__socials-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.project-intro__socials-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  transform: translateY(50%);
+}
+.project-intro__socials {
+  display: flex;
+  gap: 0.625rem;
+  z-index: 1;
+  background-color: var(--clr-neutral-100);
+  padding-inline: 1.875rem;
+}
+.project-intro__link {
+  display: grid;
+  place-content: center;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border: 1px solid #e1e1e1;
+  transition: all 300ms ease-in-out;
+}
+.project-intro__link:hover {
+  border-color: var(--clr-neutral-900);
+  background-color: var(--clr-neutral-900);
+}
+.project-intro__link:hover .project-intro__social-icon {
+  fill: var(--clr-neutral-100);
+}
+.project-intro__social-icon {
+  width: 1rem;
+  aspect-ratio: 1;
+  fill: #848484;
+  transition: all 300ms ease-in-out;
+}
+
 .not-found {
   background-size: cover;
   background-repeat: no-repeat;
