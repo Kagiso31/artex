@@ -44,6 +44,8 @@ import blog13postimg from "../assets/blog/blog16.jpg";
 import blo14listimg from "../assets/blog/blog17.jpg";
 import blo14postimg from "../assets/blog/blog17.jpg";
 
+import profileImg from "../assets/blog/single-blog/profile-pic.png";
+
 export const blogPosts: BlogPost[] = [
   /* post 1 */
   {
@@ -83,7 +85,7 @@ export const blogPosts: BlogPost[] = [
     comments: [
       {
         id: 1,
-        profileImg: "",
+        profileImg: profileImg,
         author: "Aaron Davis",
         date: "21 February 2024",
         body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate asperiores sunt corrupti consectetur ut? Aliquid, consectetur voluptatum distinctio aspernatur enim fugiat. Consequuntur.",
@@ -163,14 +165,14 @@ export const blogPosts: BlogPost[] = [
     comments: [
       {
         id: 1,
-        profileImg: "",
+        profileImg: profileImg,
         author: "Cletus Kasady",
         date: "9 March 2024",
         body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate asperiores sunt corrupti consectetur ut? Aliquid, consectetur voluptatum distinctio aspernatur enim fugiat. Consequuntur.",
       },
       {
         id: 2,
-        profileImg: "",
+        profileImg: profileImg,
         author: "Donna Diego",
         date: "10 March 2024",
         body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate asperiores sunt corrupti consectetur ut? Aliquid, consectetur voluptatum distinctio aspernatur enim fugiat. Consequuntur.",
@@ -284,7 +286,7 @@ export const blogPosts: BlogPost[] = [
     comments: [
       {
         id: 1,
-        profileImg: "",
+        profileImg: profileImg,
         author: "May Parker",
         date: "3 June 2024",
         body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate asperiores sunt corrupti consectetur ut? Aliquid, consectetur voluptatum distinctio aspernatur enim fugiat. Consequuntur.",
@@ -363,7 +365,7 @@ export const blogPosts: BlogPost[] = [
     comments: [
       {
         id: 1,
-        profileImg: "",
+        profileImg: profileImg,
         author: "Miles Morales",
         date: "19 July 2024",
         body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate asperiores sunt corrupti consectetur ut? Aliquid, consectetur voluptatum distinctio aspernatur enim fugiat. Consequuntur.",
@@ -477,7 +479,7 @@ export const blogPosts: BlogPost[] = [
     comments: [
       {
         id: 1,
-        profileImg: "",
+        profileImg: profileImg,
         author: "Calypso Ezili",
         date: "30 September 2024",
         body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate asperiores sunt corrupti consectetur ut? Aliquid, consectetur voluptatum distinctio aspernatur enim fugiat. Consequuntur.",
@@ -556,7 +558,7 @@ export const blogPosts: BlogPost[] = [
     comments: [
       {
         id: 1,
-        profileImg: "",
+        profileImg: profileImg,
         author: "Jefferson Davis",
         date: "29 October 2024",
         body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate asperiores sunt corrupti consectetur ut? Aliquid, consectetur voluptatum distinctio aspernatur enim fugiat. Consequuntur.",

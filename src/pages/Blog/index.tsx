@@ -1,5 +1,15 @@
+import usePageTitle from "../../hooks/usePageTitle";
+import BlogList from "./BlogList";
+
 const Blog = () => {
-  return <div>Blog</div>;
+  usePageTitle("Blog");
+  return (
+    <div>
+      <main>
+        <BlogList />
+      </main>
+    </div>
+  );
 };
 
 export default Blog;

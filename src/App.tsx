@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
 import Portfolio from "./pages/Portfolio";
 import Project from "./pages/Project";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 // layout
@@ -30,6 +31,9 @@ const router = createBrowserRouter(
         <Route path="portfolio">
           <Route index element={<Portfolio />} />
           <Route path=":id" element={<Project />} />
+        </Route>
+        <Route path="blog">
+          <Route index element={<Blog />} />
         </Route>
       </Route>
       <Route path="*" element={<NotFound />} />

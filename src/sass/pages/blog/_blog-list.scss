@@ -1,0 +1,95 @@
+@use "../../abstracts/mixins" as m;
+
+.blog-list {
+  @include m.breakpoint(medium) {
+    padding-bottom: 4.0625rem;
+  }
+
+  &-card {
+    max-width: 50rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.875rem;
+    }
+    &:hover &__img {
+      opacity: 0.8;
+      transform: scale(1.12) rotate(5deg);
+    }
+
+    &__img-container {
+      background-color: var(--clr-neutral-900);
+      overflow: hidden;
+    }
+    &__img {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+      transition: all 300ms ease-in-out;
+    }
+
+    &__text {
+      padding: 2.5rem 2.8125rem;
+      background-color: var(--clr-neutral-100);
+      box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.05);
+    }
+    &__list {
+      --_spacing-x: 0.8125rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--_spacing-x);
+      margin-bottom: 0.3125rem;
+
+      @include m.breakpoint(xsmall) {
+        gap: 0.2rem;
+      }
+
+      > li {
+        transition: color 300ms ease-in-out;
+        color: var(--clr-neutral-600);
+
+        &:not(:last-of-type) {
+          position: relative;
+          padding-right: var(--_spacing-x);
+
+          &::before {
+            content: "/";
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: var(--clr-neutral-600);
+          }
+        }
+      }
+    }
+
+    &__heading {
+      font-size: clamp(1.375rem, 4vw, 1.75rem);
+      font-weight: var(--fw-600);
+      margin-bottom: 0.625rem;
+
+      > a {
+        color: var(--clr-neutral-900);
+
+        &:hover {
+          color: var(--clr-neutral-800);
+        }
+      }
+    }
+
+    &__summary {
+      margin-bottom: 1.875rem;
+    }
+
+    &__icon {
+      width: 0.9375rem;
+      aspect-ratio: 1;
+    }
+
+    &__author,
+    &__comment {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  }
+}
