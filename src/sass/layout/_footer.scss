@@ -141,7 +141,7 @@
     position: relative;
     overflow: hidden;
 
-    &::before {
+    &::after {
       content: "";
       display: block;
       position: absolute;
@@ -157,7 +157,7 @@
       );
       transform: skewX(-25deg);
     }
-    &:hover::before {
+    &:hover::after {
       animation: shine 750ms;
     }
   }

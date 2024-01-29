@@ -1,16 +1,20 @@
 import { BlogPost } from "./";
 
 import blog1cardimg from "../assets/home/blog10-690x440.jpg";
+import blog1sidebarimg from "../assets/blog/blog10-150x150.jpg";
 import blog1listimg from "../assets/blog/blog10.jpg";
 import blog1postimg from "../assets/blog/blog10.jpg";
 
 import blog2cardimg from "../assets/home/blog7-690x440.jpg";
+import blog2sidebarimg from "../assets/blog/blog7-150x150.jpg";
 import blog2listimg from "../assets/blog/blog7.jpg";
 import blog2postimg from "../assets/blog/blog7.jpg";
 
+import blog3sidebarimg from "../assets/blog/blog3-150x150.jpg";
 import blog3listimg from "../assets/blog/blog3.jpg";
 import blog3postimg from "../assets/blog/blog3.jpg";
 
+import blog4sidebarimg from "../assets/blog/blog6-150x150.jpg";
 import blog4listimg from "../assets/blog/blog6.jpg";
 import blog4postimg from "../assets/blog/blog6.jpg";
 
@@ -80,6 +84,7 @@ export const blogPosts: BlogPost[] = [
       occupation: "CEO",
     },
     cardImg: blog1cardimg,
+    sidebarImg: blog1sidebarimg,
     listImg: blog1listimg,
     postImg: blog1postimg,
     comments: [
@@ -125,6 +130,7 @@ export const blogPosts: BlogPost[] = [
       occupation: "CEO",
     },
     cardImg: blog2cardimg,
+    sidebarImg: blog2sidebarimg,
     listImg: blog2listimg,
     postImg: blog2postimg,
   },
@@ -160,6 +166,7 @@ export const blogPosts: BlogPost[] = [
       author: "Stan Lee",
       occupation: "CEO",
     },
+    sidebarImg: blog3sidebarimg,
     listImg: blog3listimg,
     postImg: blog3postimg,
     comments: [
@@ -211,6 +218,7 @@ export const blogPosts: BlogPost[] = [
       author: "Stan Lee",
       occupation: "CEO",
     },
+    sidebarImg: blog4sidebarimg,
     listImg: blog4listimg,
     postImg: blog4postimg,
   },

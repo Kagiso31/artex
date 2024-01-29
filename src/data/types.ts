@@ -72,6 +72,7 @@ export type BlogPost = {
   listImg: string;
   postImg: string;
   cardImg?: string;
+  sidebarImg?: string;
   comments?: {
     id: number;
     profileImg: string;

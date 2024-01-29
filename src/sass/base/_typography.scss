@@ -25,7 +25,7 @@ p {
   color: var(--section-body-text-clr);
 }
 
-li > a {
+nav > ul > li > a {
   font-family: var(--nav-link-ff);
   font-size: var(--nav-link-fs);
   font-weight: var(--nav-link-fw);

@@ -5,6 +5,7 @@ import { ChevronDoubleUp } from "./misc/ChevronDoubleUp";
 import { Phone } from "./misc/Phone";
 import { Plus } from "./misc/Plus";
 import { Minus } from "./misc/Minus";
+import { Calendar } from "./misc/Calendar";
 
 import { Facebook } from "./socials/Facebook";
 import { Instagram } from "./socials/Instagram";
@@ -32,6 +33,7 @@ export {
   Phone,
   Plus,
   Minus,
+  Calendar,
   Facebook,
   Instagram,
   LinkedIn,
