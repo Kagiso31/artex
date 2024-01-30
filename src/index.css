@@ -775,11 +775,6 @@ button[type=submit] > span:last-child::after {
   gap: 0.3125rem;
   max-width: 28.9375rem;
 }
-@media (min-width: 40em) {
-  .sidebar-gallery__grid {
-    max-width: 20.625rem;
-  }
-}
 .sidebar-gallery__project {
   position: relative;
   overflow: hidden;
@@ -3047,10 +3042,40 @@ button[type=submit] > span:last-child::after {
   }
 }
 
+.blog {
+  padding-block: 8rem;
+}
+.blog__wrapper {
+  display: grid;
+  margin-inline: auto;
+  max-width: 33.75rem;
+  width: 100%;
+}
 @media (min-width: 40em) {
-  .blog-list {
-    padding-bottom: 4.0625rem;
+  .blog__wrapper {
+    max-width: 45rem;
   }
+}
+@media (min-width: 64em) {
+  .blog__wrapper {
+    grid-template-columns: 2fr 1fr;
+    max-width: 60rem;
+  }
+}
+@media (min-width: 87.5em) {
+  .blog__wrapper {
+    max-width: 75rem;
+  }
+}
+.blog__main {
+  padding-inline: 1.25rem;
+}
+.blog__aside {
+  padding-inline: 1.25rem;
+}
+
+.blog-list {
+  padding-bottom: 4.0625rem;
 }
 .blog-list-card {
   max-width: 50rem;

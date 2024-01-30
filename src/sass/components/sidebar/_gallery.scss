@@ -15,10 +15,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 0.3125rem;
     max-width: 28.9375rem;
-
-    @include m.breakpoint(medium) {
-      max-width: 20.625rem;
-    }
   }
 
   &__project {

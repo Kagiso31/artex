@@ -1,9 +1,7 @@
 @use "../../abstracts/mixins" as m;
 
 .blog-list {
-  @include m.breakpoint(medium) {
-    padding-bottom: 4.0625rem;
-  }
+  padding-bottom: 4.0625rem;
 
   &-card {
     max-width: 50rem;

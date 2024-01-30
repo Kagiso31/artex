@@ -1,0 +1,29 @@
+@use "../../abstracts/mixins" as m;
+
+.blog {
+  padding-block: 8rem;
+
+  &__wrapper {
+    display: grid;
+    margin-inline: auto;
+    max-width: 33.75rem;
+    width: 100%;
+
+    @include m.breakpoint(medium) {
+      max-width: 45rem;
+    }
+    @include m.breakpoint(large) {
+      grid-template-columns: 2fr 1fr;
+      max-width: 60rem;
+    }
+    @include m.breakpoint(xlarge) {
+      max-width: 75rem;
+    }
+  }
+  &__main {
+    padding-inline: 1.25rem;
+  }
+  &__aside {
+    padding-inline: 1.25rem;
+  }
+}

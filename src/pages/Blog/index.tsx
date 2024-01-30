@@ -5,13 +5,14 @@ import Sidebar from "../../components/Sidebar";
 const Blog = () => {
   usePageTitle("Blog");
   return (
-    <div style={{ paddingBlock: "8rem" }}>
-      <div>
-        <main>
+    <div className="blog">
+      <div className="blog__wrapper">
+        <main className="blog__main">
           <BlogList />
         </main>
+
         {/* sidebar */}
-        <aside>
+        <aside className="blog__aside">
           <Sidebar />
         </aside>
       </div>
