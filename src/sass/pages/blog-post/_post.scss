@@ -148,13 +148,6 @@
     }
     &__item {
       position: relative;
-
-      &::before {
-        content: ",";
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
     }
   }
 
@@ -163,7 +156,7 @@
     margin-bottom: 3.125rem !important;
 
     &__heading {
-      font-size: var(--fs-md);
+      font-size: 1.75rem;
       text-align: left;
       margin-bottom: 1.875rem;
     }

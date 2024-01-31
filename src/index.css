@@ -3282,18 +3282,12 @@ button[type=submit] > span:last-child::after {
 .post-tags__item {
   position: relative;
 }
-.post-tags__item::before {
-  content: ",";
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 .post-comments {
   margin-top: 2.5rem;
   margin-bottom: 3.125rem !important;
 }
 .post-comments__heading {
-  font-size: var(--fs-md);
+  font-size: 1.75rem;
   text-align: left;
   margin-bottom: 1.875rem;
 }
