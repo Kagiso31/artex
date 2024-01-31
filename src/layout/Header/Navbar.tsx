@@ -8,9 +8,15 @@ const Navbar = () => {
         <ul role="list" className="nav__list">
           {navList.map((link) => (
             <li key={link.id} className="nav__item">
-              <NavLink className="nav__link" to={link.url}>
-                {link.title}
-              </NavLink>
+              {link.title === "Home" ? (
+                <NavLink className="nav__link" to={link.url} end>
+                  {link.title}
+                </NavLink>
+              ) : (
+                <NavLink className="nav__link" to={link.url}>
+                  {link.title}
+                </NavLink>
+              )}
             </li>
           ))}
         </ul>

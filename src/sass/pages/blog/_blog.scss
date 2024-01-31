@@ -16,7 +16,7 @@
       grid-template-columns: 2fr 1fr;
       max-width: 60rem;
     }
-    @include m.breakpoint(xlarge) {
+    @media (min-width: 76.875em) {
       max-width: 75rem;
     }
   }

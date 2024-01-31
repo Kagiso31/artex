@@ -14,6 +14,7 @@ import Faq from "./pages/Faq";
 import Portfolio from "./pages/Portfolio";
 import Project from "./pages/Project";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 
 // layout
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
         </Route>
         <Route path="blog">
           <Route index element={<Blog />} />
+          <Route path=":id" element={<BlogPost />} />
         </Route>
       </Route>
       <Route path="*" element={<NotFound />} />
