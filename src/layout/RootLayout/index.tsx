@@ -3,6 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import BackToTopButton from "../../components/BackToTopButton";
 import SharedHero from "../SharedHero";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 const RootLayout = () => {
   const location = useLocation();
@@ -10,6 +11,7 @@ const RootLayout = () => {
   const match = routesWithoutSharedHero.find((route) => {
     if (location.pathname === route) return true;
   });
+  useScrollToTop();
 
   if (match) {
     return (

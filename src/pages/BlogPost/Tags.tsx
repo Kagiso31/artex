@@ -23,6 +23,17 @@ const Tags = ({ post }: TagsProps) => {
             </li>
           );
         })}
+        {post?.tags.map((tag, index) =>
+          post.tags.length === index ? (
+            <li key={tag} className="post-tags__item">
+              {tag}
+            </li>
+          ) : (
+            <li key={tag} className="post-tags__item">
+              {tag},
+            </li>
+          )
+        )}
       </ul>
     </div>
   );
