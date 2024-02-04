@@ -1,15 +1,34 @@
 import { Link } from "react-router-dom";
 import { BlogPost, blogPosts } from "../../data";
 import { Comment, User } from "../../data/icons";
+import { useMemo, useState } from "react";
+import Pagination from "../../components/Pagination";
+
+const PageSize = 3;
 
 const BlogList = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const currentBlogData: BlogPost[] = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    return blogPosts.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
+
   return (
     <section className="blog-list">
       <div className="blog-list__cards">
-        {blogPosts.map((post) => (
+        {currentBlogData.map((post) => (
           <BlogPostCard key={post.id} {...post} />
         ))}
       </div>
+      <Pagination
+        className=""
+        currentPage={currentPage}
+        totalCount={blogPosts.length}
+        pageSize={PageSize}
+        onPageChange={(page) => setCurrentPage(page)}
+      />
     </section>
   );
 };

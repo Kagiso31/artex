@@ -2,6 +2,8 @@ import { Search } from "./misc/Search";
 import { Hamburger } from "./misc/Hamburger";
 import { Close } from "./misc/Close";
 import { ChevronDoubleUp } from "./misc/ChevronDoubleUp";
+import { ChevronDoubleLeft } from "./misc/ChevronDoubleLeft";
+import { ChevronDoubleRight } from "./misc/ChevronDoubleRight";
 import { Phone } from "./misc/Phone";
 import { Plus } from "./misc/Plus";
 import { Minus } from "./misc/Minus";
@@ -30,6 +32,8 @@ export {
   Hamburger,
   Close,
   ChevronDoubleUp,
+  ChevronDoubleLeft,
+  ChevronDoubleRight,
   Phone,
   Plus,
   Minus,
