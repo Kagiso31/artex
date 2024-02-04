@@ -833,6 +833,7 @@ button[type=submit] > span:last-child::after {
 .pagination__container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .pagination__arrow {
   fill: var(--clr-neutral-400);
