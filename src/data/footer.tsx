@@ -114,37 +114,37 @@ export const galleryProjects: GalleryProject[] = [
   {
     id: 1,
     title: "Project 8",
-    url: "/artex/portfolio/project8",
+    url: "/artex/portfolio/8",
     img: project8,
   },
   {
     id: 2,
     title: "Project 9",
-    url: "/artex/portfolio/project9",
+    url: "/artex/portfolio/9",
     img: project9,
   },
   {
     id: 3,
     title: "Project 10",
-    url: "/artex/portfolio/project10",
+    url: "/artex/portfolio/10",
     img: project10,
   },
   {
     id: 4,
     title: "Project 11",
-    url: "/artex/portfolio/project11",
+    url: "/artex/portfolio/11",
     img: project11,
   },
   {
     id: 5,
     title: "Project 12",
-    url: "/artex/portfolio/project12",
+    url: "/artex/portfolio/12",
     img: project12,
   },
   {
     id: 6,
     title: "Project 13",
-    url: "/artex/portfolio/project13",
+    url: "/artex/portfolio/13",
     img: project13,
   },
 ];
