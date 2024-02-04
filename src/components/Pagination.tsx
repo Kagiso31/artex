@@ -7,7 +7,6 @@ type PaginationProps = {
   currentPage: number;
   pageSize: number;
   siblingCount?: number;
-  className: string;
 };
 
 const Pagination = ({
@@ -16,7 +15,6 @@ const Pagination = ({
   currentPage,
   pageSize,
   siblingCount = 1,
-  className,
 }: PaginationProps) => {
   const paginationRange = usePagination({
     currentPage,
@@ -51,7 +49,7 @@ const Pagination = ({
 
   return (
     <div className="pagination">
-      <ul className={`pagination__container ${className}`}>
+      <ul className={`pagination__container`}>
         {/* Left navigation arrow */}
         <li
           className={`${

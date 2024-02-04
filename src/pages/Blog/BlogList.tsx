@@ -23,7 +23,6 @@ const BlogList = () => {
         ))}
       </div>
       <Pagination
-        className=""
         currentPage={currentPage}
         totalCount={blogPosts.length}
         pageSize={PageSize}
